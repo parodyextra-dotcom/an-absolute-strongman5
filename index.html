@@ -3,9 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e3a8a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="절대강자">
+  <meta name="description" content="절대강자 가계부 - 스마트한 자산관리">
   <title>절대강자 가계부</title>
+  
+  <!-- Luxury App Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='50%25' style='stop-color:%23ffec8b'/%3E%3Cstop offset='100%25' style='stop-color:%23daa520'/%3E%3C/linearGradient%3E%3ClinearGradient id='pigBody' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='30%25' style='stop-color:%23ffec8b'/%3E%3Cstop offset='70%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='100%25' style='stop-color:%23b8860b'/%3E%3C/linearGradient%3E%3ClinearGradient id='pigNose' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffb6c1'/%3E%3Cstop offset='100%25' style='stop-color:%23ff69b4'/%3E%3C/linearGradient%3E%3Cfilter id='shadow'%3E%3CfeDropShadow dx='0' dy='8' stdDeviation='12' flood-color='%23000' flood-opacity='0.3'/%3E%3C/filter%3E%3Cfilter id='glow'%3E%3CfeGaussianBlur stdDeviation='4' result='coloredBlur'/%3E%3CfeMerge%3E%3CfeMergeNode in='coloredBlur'/%3E%3CfeMergeNode in='SourceGraphic'/%3E%3C/feMerge%3E%3C/filter%3E%3C/defs%3E%3Crect width='512' height='512' rx='100' fill='url(%23bg)'/%3E%3Cellipse cx='256' cy='280' rx='140' ry='120' fill='url(%23pigBody)' filter='url(%23shadow)'/%3E%3Cellipse cx='180' cy='180' rx='35' ry='50' fill='url(%23pigBody)' transform='rotate(-20 180 180)'/%3E%3Cellipse cx='332' cy='180' rx='35' ry='50' fill='url(%23pigBody)' transform='rotate(20 332 180)'/%3E%3Cellipse cx='256' cy='300' rx='50' ry='35' fill='url(%23pigNose)'/%3E%3Ccircle cx='240' cy='295' r='8' fill='%23b8860b'/%3E%3Ccircle cx='272' cy='295' r='8' fill='%23b8860b'/%3E%3Ccircle cx='210' cy='240' r='18' fill='%23000'/%3E%3Ccircle cx='302' cy='240' r='18' fill='%23000'/%3E%3Ccircle cx='215' cy='235' r='6' fill='%23fff'/%3E%3Ccircle cx='307' cy='235' r='6' fill='%23fff'/%3E%3Crect x='230' y='120' width='52' height='25' rx='5' fill='%23daa520'/%3E%3Ctext x='256' y='480' text-anchor='middle' font-size='40' font-weight='bold' fill='%23b8860b' filter='url(%23glow)'%3E절대강자%3C/text%3E%3C/svg%3E">
+  
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='50%25' style='stop-color:%23ffec8b'/%3E%3Cstop offset='100%25' style='stop-color:%23daa520'/%3E%3C/linearGradient%3E%3ClinearGradient id='pigBody' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='30%25' style='stop-color:%23ffec8b'/%3E%3Cstop offset='70%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='100%25' style='stop-color:%23b8860b'/%3E%3C/linearGradient%3E%3ClinearGradient id='pigNose' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffb6c1'/%3E%3Cstop offset='100%25' style='stop-color:%23ff69b4'/%3E%3C/linearGradient%3E%3Cfilter id='shadow'%3E%3CfeDropShadow dx='0' dy='8' stdDeviation='12' flood-color='%23000' flood-opacity='0.3'/%3E%3C/filter%3E%3Cfilter id='glow'%3E%3CfeGaussianBlur stdDeviation='4' result='coloredBlur'/%3E%3CfeMerge%3E%3CfeMergeNode in='coloredBlur'/%3E%3CfeMergeNode in='SourceGraphic'/%3E%3C/feMerge%3E%3C/filter%3E%3C/defs%3E%3Crect width='512' height='512' rx='100' fill='url(%23bg)'/%3E%3Cellipse cx='256' cy='280' rx='140' ry='120' fill='url(%23pigBody)' filter='url(%23shadow)'/%3E%3Cellipse cx='180' cy='180' rx='35' ry='50' fill='url(%23pigBody)' transform='rotate(-20 180 180)'/%3E%3Cellipse cx='332' cy='180' rx='35' ry='50' fill='url(%23pigBody)' transform='rotate(20 332 180)'/%3E%3Cellipse cx='256' cy='300' rx='50' ry='35' fill='url(%23pigNose)'/%3E%3Ccircle cx='240' cy='295' r='8' fill='%23b8860b'/%3E%3Ccircle cx='272' cy='295' r='8' fill='%23b8860b'/%3E%3Ccircle cx='210' cy='240' r='18' fill='%23000'/%3E%3Ccircle cx='302' cy='240' r='18' fill='%23000'/%3E%3Ccircle cx='215' cy='235' r='6' fill='%23fff'/%3E%3Ccircle cx='307' cy='235' r='6' fill='%23fff'/%3E%3Crect x='230' y='120' width='52' height='25' rx='5' fill='%23daa520'/%3E%3Ctext x='256' y='480' text-anchor='middle' font-size='40' font-weight='bold' fill='%23b8860b' filter='url(%23glow)'%3E절대강자%3C/text%3E%3C/svg%3E">
+  
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- PWA Manifest -->
+  <script>
+    const manifest = {
+      name: "절대강자 가계부",
+      short_name: "절대강자",
+      description: "스마트한 자산관리 앱",
+      start_url: "./",
+      display: "standalone",
+      background_color: "#ffd700",
+      theme_color: "#daa520",
+      orientation: "portrait",
+      icons: [
+        {
+          src: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='50%25' style='stop-color:%23ffec8b'/%3E%3Cstop offset='100%25' style='stop-color:%23daa520'/%3E%3C/linearGradient%3E%3ClinearGradient id='pigBody' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='30%25' style='stop-color:%23ffec8b'/%3E%3Cstop offset='70%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='100%25' style='stop-color:%23b8860b'/%3E%3C/linearGradient%3E%3ClinearGradient id='pigNose' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffb6c1'/%3E%3Cstop offset='100%25' style='stop-color:%23ff69b4'/%3E%3C/linearGradient%3E%3Cfilter id='shadow'%3E%3CfeDropShadow dx='0' dy='8' stdDeviation='12' flood-color='%23000' flood-opacity='0.3'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='512' height='512' rx='100' fill='url(%23bg)'/%3E%3Cellipse cx='256' cy='280' rx='140' ry='120' fill='url(%23pigBody)' filter='url(%23shadow)'/%3E%3Cellipse cx='180' cy='180' rx='35' ry='50' fill='url(%23pigBody)' transform='rotate(-20 180 180)'/%3E%3Cellipse cx='332' cy='180' rx='35' ry='50' fill='url(%23pigBody)' transform='rotate(20 332 180)'/%3E%3Cellipse cx='256' cy='300' rx='50' ry='35' fill='url(%23pigNose)'/%3E%3Ccircle cx='240' cy='295' r='8' fill='%23b8860b'/%3E%3Ccircle cx='272' cy='295' r='8' fill='%23b8860b'/%3E%3Ccircle cx='210' cy='240' r='18' fill='%23000'/%3E%3Ccircle cx='302' cy='240' r='18' fill='%23000'/%3E%3Ccircle cx='215' cy='235' r='6' fill='%23fff'/%3E%3Ccircle cx='307' cy='235' r='6' fill='%23fff'/%3E%3Crect x='230' y='120' width='52' height='25' rx='5' fill='%23daa520'/%3E%3Ctext x='256' y='480' text-anchor='middle' font-size='40' font-weight='bold' fill='%23b8860b'%3E절대강자%3C/text%3E%3C/svg%3E",
+          sizes: "512x512",
+          type: "image/svg+xml",
+          purpose: "any maskable"
+        },
+        {
+          src: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='50%25' style='stop-color:%23ffec8b'/%3E%3Cstop offset='100%25' style='stop-color:%23daa520'/%3E%3C/linearGradient%3E%3ClinearGradient id='pigBody' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffd700'/%3E%3Cstop offset='50%25' style='stop-color:%23ffec8b'/%3E%3Cstop offset='100%25' style='stop-color:%23b8860b'/%3E%3C/linearGradient%3E%3ClinearGradient id='pigNose' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffb6c1'/%3E%3Cstop offset='100%25' style='stop-color:%23ff69b4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='192' height='192' rx='40' fill='url(%23bg)'/%3E%3Cellipse cx='96' cy='105' rx='52' ry='45' fill='url(%23pigBody)'/%3E%3Cellipse cx='68' cy='65' rx='13' ry='18' fill='url(%23pigBody)' transform='rotate(-20 68 65)'/%3E%3Cellipse cx='124' cy='65' rx='13' ry='18' fill='url(%23pigBody)' transform='rotate(20 124 65)'/%3E%3Cellipse cx='96' cy='115' rx='18' ry='13' fill='url(%23pigNose)'/%3E%3Ccircle cx='90' cy='112' r='3' fill='%23b8860b'/%3E%3Ccircle cx='102' cy='112' r='3' fill='%23b8860b'/%3E%3Ccircle cx='78' cy='92' r='7' fill='%23000'/%3E%3Ccircle cx='114' cy='92' r='7' fill='%23000'/%3E%3Ccircle cx='80' cy='90' r='2' fill='%23fff'/%3E%3Ccircle cx='116' cy='90' r='2' fill='%23fff'/%3E%3Crect x='84' y='42' width='24' height='12' rx='3' fill='%23daa520'/%3E%3C/svg%3E",
+          sizes: "192x192",
+          type: "image/svg+xml",
+          purpose: "any maskable"
+        }
+      ]
+    };
+    const manifestBlob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+    const manifestURL = URL.createObjectURL(manifestBlob);
+    const link = document.createElement('link');
+    link.rel = 'manifest';
+    link.href = manifestURL;
+    document.head.appendChild(link);
+  </script>
   <style>
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-10px); }
@@ -31,6 +77,7 @@
       investments: [],
       dividends: [],
       investmentJournals: [],
+      loans: [],
       showAddDividend: false,
       showAddJournal: false,
       dividendPeriod: 'all',
@@ -51,14 +98,17 @@
       usdInitialBudget: 10000000,
       jpyInitialBudget: 10000000,
       categories: {
-        expense: ['식비', '교통비', '통신비', '생활용품', '의료비', '교육비', '문화생활', '아버지', '지환', '다혜', '다연', '보험료', '외식비', '세금공과금', '주유비', '기타비'],
-        income: ['급여', '이자', '대리업무', '배당금', '기타수입']
+        expense: ['식비', '교통비', '통신비', '생활용품', '의료비', '교육비', '문화생활', '아버지', '지환', '다혜', '다연', '보험료', '외식비', '세금공과금', '주유비', '대출상환', '기타비'],
+        income: ['급여', '이자', '대리업무', '배당금', '기타수입'],
+        fixedExpense: ['보험료', '지환', '다혜', '부모님', '기타비']
       },
+      fixedExpenses: [],
       undoStack: [],
       showAddTransaction: false,
       showCompoundCalc: false,
       showSettings: false,
       showAddInvestment: false,
+      showRankInfo: false,
       isLoading: true
     };
 
@@ -77,6 +127,219 @@
       }
     };
 
+    // Check and add automatic installment payments
+    function checkAutoInstallments() {
+      var today = new Date();
+      var currentYear = today.getFullYear();
+      var currentMonth = today.getMonth();
+      
+      // 고유한 할부 시리즈 찾기 (startDate + originalAmount 조합으로 그룹화)
+      var uniqueInstallments = {};
+      state.transactions.filter(function(t) {
+        return t.installmentInfo && t.installmentInfo.total > 1 && t.installmentInfo.startDate;
+      }).forEach(function(t) {
+        var key = t.installmentInfo.startDate + '_' + t.installmentInfo.originalAmount;
+        if (!uniqueInstallments[key]) {
+          uniqueInstallments[key] = {
+            info: t.installmentInfo,
+            isNecessary: t.isNecessary,
+            existingMonths: []
+          };
+        }
+        // 이미 입력된 회차 기록
+        uniqueInstallments[key].existingMonths.push(t.installmentInfo.current);
+      });
+      
+      var totalAdded = 0;
+      
+      // 각 고유 할부 시리즈에 대해 처리
+      Object.keys(uniqueInstallments).forEach(function(key) {
+        var data = uniqueInstallments[key];
+        var info = data.info;
+        var startDate = new Date(info.startDate);
+        var startYear = startDate.getFullYear();
+        var startMonth = startDate.getMonth();
+        var startDay = startDate.getDate();
+        var totalInstallments = info.total;
+        var monthlyAmount = info.monthlyAmount;
+        var originalMemo = info.originalMemo;
+        var originalCategory = info.originalCategory;
+        
+        // 시작월부터 현재월까지 몇 개월 경과했는지 계산
+        var monthsPassed = (currentYear - startYear) * 12 + (currentMonth - startMonth);
+        
+        // 현재 달까지 입력해야 할 회차 (최대 total까지)
+        // monthsPassed가 0이면 첫 달, 1이면 2번째 달...
+        var shouldHaveInstallments = Math.min(monthsPassed + 1, totalInstallments);
+        
+        // 1회차부터 shouldHaveInstallments까지 각 회차가 있는지 확인하고 없으면 추가
+        for (var i = 1; i <= shouldHaveInstallments; i++) {
+          if (data.existingMonths.indexOf(i) === -1) {
+            // 해당 회차가 없으면 추가
+            var installmentDate = new Date(startYear, startMonth + (i - 1), startDay);
+            var dateStr = installmentDate.getFullYear() + '-' + 
+                          String(installmentDate.getMonth() + 1).padStart(2, '0') + '-' + 
+                          String(installmentDate.getDate()).padStart(2, '0');
+            
+            var newTransaction = {
+              id: Date.now() + Math.random() + i,
+              type: 'expense',
+              date: dateStr,
+              amount: monthlyAmount,
+              category: originalCategory,
+              memo: originalMemo ? originalMemo + ' (' + i + '/' + totalInstallments + '회차)' : '할부 ' + i + '/' + totalInstallments + '회차',
+              paymentMethod: 'card',
+              installment: totalInstallments,
+              installmentInfo: {
+                current: i,
+                total: totalInstallments,
+                originalAmount: info.originalAmount,
+                startDate: info.startDate,
+                monthlyAmount: monthlyAmount,
+                originalMemo: originalMemo,
+                originalCategory: originalCategory
+              },
+              isNecessary: data.isNecessary
+            };
+            
+            state.transactions.push(newTransaction);
+            totalAdded++;
+          }
+        }
+      });
+      
+      if (totalAdded > 0) {
+        saveData();
+        showToast(totalAdded + '건의 할부금이 자동 입력되었습니다');
+      }
+    }
+
+    // Check and add automatic fixed expenses
+    function checkAutoFixedExpenses() {
+      var today = new Date();
+      var currentYear = today.getFullYear();
+      var currentMonth = today.getMonth();
+      var currentDay = today.getDate();
+      var totalAdded = 0;
+      
+      state.fixedExpenses.forEach(function(fe) {
+        if (!fe.active) return;
+        
+        var startDate = new Date(fe.startDate);
+        var endDate = fe.endDate ? new Date(fe.endDate) : new Date('2099-12-31');
+        
+        // 시작일부터 현재까지 또는 종료일까지의 모든 월 체크
+        var checkDate = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
+        var endCheckDate = new Date(Math.min(today.getTime(), endDate.getTime()));
+        
+        while (checkDate <= endCheckDate) {
+          var checkYear = checkDate.getFullYear();
+          var checkMonth = checkDate.getMonth();
+          
+          // 현재 달이거나 지난 달인 경우에만 처리
+          if (checkYear < currentYear || (checkYear === currentYear && checkMonth <= currentMonth)) {
+            // 해당 월의 출금일
+            var paymentDate = new Date(checkYear, checkMonth, fe.payDay);
+            
+            // 시작일 이후이고 종료일 이전인 경우에만
+            if (paymentDate >= startDate && paymentDate <= endDate) {
+              var dateString = paymentDate.toISOString().split('T')[0];
+              
+              // 이미 입력된 거래가 있는지 확인
+              var existingTransaction = state.transactions.find(function(t) {
+                return t.fixedExpenseId === fe.id && t.date === dateString;
+              });
+              
+              if (!existingTransaction) {
+                // 오늘 이전이거나 오늘이고 출금일이 지났으면 입력
+                if (paymentDate < today || (checkYear === currentYear && checkMonth === currentMonth && currentDay >= fe.payDay)) {
+                  var newTransaction = {
+                    id: Date.now() + Math.random(),
+                    type: 'expense',
+                    date: dateString,
+                    amount: fe.amount,
+                    category: fe.category,
+                    memo: fe.memo ? fe.memo + ' (고정비)' : '고정비',
+                    paymentMethod: fe.paymentMethod,
+                    installment: 0,
+                    isNecessary: true,
+                    fixedExpenseId: fe.id
+                  };
+                  state.transactions.push(newTransaction);
+                  totalAdded++;
+                }
+              }
+            }
+          }
+          
+          // 다음 달로 이동
+          checkDate.setMonth(checkDate.getMonth() + 1);
+        }
+      });
+      
+      if (totalAdded > 0) {
+        saveData();
+        showToast(totalAdded + '건의 고정비가 자동 입력되었습니다');
+      }
+    }
+
+    // Check and add automatic loan repayments
+    function checkAutoLoanRepayments() {
+      var today = new Date();
+      var currentYear = today.getFullYear();
+      var currentMonth = today.getMonth();
+      var currentDay = today.getDate();
+      
+      state.loans.forEach(function(loan) {
+        if (!loan.monthlyPayment || loan.monthlyPayment <= 0) return;
+        if (!loan.payDay) return;
+        
+        // Check if repayment date has passed
+        if (loan.repayDate) {
+          var repayEnd = new Date(loan.repayDate);
+          if (today > repayEnd) return; // Loan already fully repaid
+        }
+        
+        // Check if loan start date has passed
+        if (loan.loanDate) {
+          var loanStart = new Date(loan.loanDate);
+          if (today < loanStart) return; // Loan hasn't started yet
+        }
+        
+        // Check if today is the payment day or has passed this month
+        if (currentDay >= loan.payDay) {
+          var repaymentDate = new Date(currentYear, currentMonth, loan.payDay);
+          var dateString = repaymentDate.toISOString().split('T')[0];
+          
+          // Check if transaction already exists for this month
+          var existingTransaction = state.transactions.find(function(t) {
+            return t.type === 'expense' && 
+                   t.category === '대출상환' && 
+                   t.date === dateString && 
+                   t.memo && t.memo.indexOf(loan.name) >= 0;
+          });
+          
+          if (!existingTransaction) {
+            // Add automatic repayment transaction
+            var newTransaction = {
+              id: Date.now() + Math.random(),
+              type: 'expense',
+              date: dateString,
+              amount: loan.monthlyPayment,
+              category: '대출상환',
+              memo: loan.name + ' 월상환금 (자동)',
+              paymentMethod: 'cash',
+              installment: 0,
+              isNecessary: true
+            };
+            state.transactions.push(newTransaction);
+            saveData();
+            showToast(loan.name + ' 월상환금이 자동 등록되었습니다');
+          }
+        }
+      });
+    }
+
     // Load data
     function loadData() {
       state.transactions = storage.get('transactions') || [];
@@ -87,6 +350,8 @@
       state.investments = storage.get('investments') || [];
       state.dividends = storage.get('dividends') || [];
       state.investmentJournals = storage.get('investmentJournals') || [];
+      state.loans = storage.get('loans') || [];
+      state.fixedExpenses = storage.get('fixedExpenses') || [];
       state.categories = storage.get('categories') || state.categories;
       var exchangeData = storage.get('exchangeData');
       if (exchangeData) {
@@ -100,6 +365,16 @@
         state.jpyInitialBudget = exchangeData.jpyInitialBudget || 10000000;
       }
       state.isLoading = false;
+      
+      // Check for automatic installment payments
+      checkAutoInstallments();
+      
+      // Check for automatic loan repayments
+      checkAutoLoanRepayments();
+      
+      // Check for automatic fixed expenses
+      checkAutoFixedExpenses();
+      
       render();
     }
 
@@ -113,6 +388,8 @@
       storage.set('investments', state.investments);
       storage.set('dividends', state.dividends);
       storage.set('investmentJournals', state.investmentJournals);
+      storage.set('loans', state.loans);
+      storage.set('fixedExpenses', state.fixedExpenses);
       storage.set('categories', state.categories);
       storage.set('exchangeData', {
         usdPhases: state.usdPhases,
@@ -147,6 +424,44 @@
     // Utility functions
     function formatNumber(num) {
       return num.toLocaleString();
+    }
+
+    // Format input with commas
+    function formatAmountInput(input) {
+      var value = input.value.replace(/[^\d]/g, '');
+      if (value === '') {
+        input.value = '';
+        return;
+      }
+      var num = parseInt(value, 10);
+      input.value = num.toLocaleString();
+    }
+
+    // Get numeric value from formatted input
+    function getAmountValue(inputId) {
+      var input = document.getElementById(inputId);
+      if (!input) return 0;
+      var value = input.value.replace(/[^\d]/g, '');
+      return parseInt(value, 10) || 0;
+    }
+
+    // Format quantity input (allows decimal)
+    function formatQuantityInput(input) {
+      var value = input.value.replace(/[^\d.]/g, '');
+      // Only allow one decimal point
+      var parts = value.split('.');
+      if (parts.length > 2) {
+        value = parts[0] + '.' + parts.slice(1).join('');
+      }
+      input.value = value;
+    }
+
+    // Get quantity value (allows decimal)
+    function getQuantityValue(inputId) {
+      var input = document.getElementById(inputId);
+      if (!input) return 0;
+      var value = input.value.replace(/[^\d.]/g, '');
+      return parseFloat(value) || 0;
     }
 
     function getRankInfo(balance) {
@@ -200,6 +515,7 @@
         investments: state.investments,
         dividends: state.dividends,
         investmentJournals: state.investmentJournals,
+        loans: state.loans,
         events: state.events,
         categories: state.categories,
         exchangeData: {
@@ -273,6 +589,7 @@
             state.investments = data.investments || [];
             state.dividends = data.dividends || [];
             state.investmentJournals = data.investmentJournals || [];
+            state.loans = data.loans || [];
             state.events = data.events || [];
             if (data.categories) state.categories = data.categories;
             if (data.exchangeData) {
@@ -308,9 +625,97 @@
             '<button onclick="state.showSettings=true;render()" class="bg-white text-blue-600 p-2 rounded-full hover:bg-blue-50 transition shadow-md">' +
               '<i data-lucide="settings" class="w-4 h-4"></i>' +
             '</button>' +
-            '<div class="' + rankInfo.bgColor + ' px-3 py-1 rounded-full flex items-center gap-1 shadow-md">' +
+            '<button onclick="state.showRankInfo=true;render()" class="' + rankInfo.bgColor + ' px-3 py-1 rounded-full flex items-center gap-1 shadow-md hover:scale-105 transition cursor-pointer">' +
               '<span class="text-base">' + rankInfo.icon + '</span>' +
               '<span class="text-sm font-bold ' + rankInfo.color + '">' + rankInfo.rank + '</span>' +
+            '</button>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }
+    
+    // Rank Info Modal
+    function renderRankInfoModal() {
+      var totalBankBalance = state.bankBalances.reduce(function(sum, b) { return sum + b.balance; }, 0);
+      var currentRankInfo = getRankInfo(totalBankBalance);
+      
+      var ranks = [
+        { rank: '절대강자', min: 500000000, icon: '👑', color: 'from-purple-500 to-indigo-600', textColor: 'text-purple-700', bgColor: 'bg-purple-100', desc: '5억 이상의 자산을 보유한 최상위 등급입니다. 진정한 자산가의 반열에 올랐습니다!', benefit: '재정적 자유 달성! 어떤 상황에서도 흔들리지 않는 든든한 자산' },
+        { rank: '소부자', min: 200000000, icon: '💎', color: 'from-blue-500 to-cyan-500', textColor: 'text-blue-700', bgColor: 'bg-blue-100', desc: '2억 이상의 자산으로 소부자 등급에 도달했습니다. 안정적인 자산 기반을 갖추었습니다.', benefit: '투자 포트폴리오 다각화 가능, 부동산 투자 기회' },
+        { rank: '중산층', min: 100000000, icon: '🏆', color: 'from-green-500 to-emerald-500', textColor: 'text-green-700', bgColor: 'bg-green-100', desc: '1억 이상의 자산을 모아 중산층에 진입했습니다. 꾸준한 노력의 결과입니다!', benefit: '주택 구매 자금 마련, 자녀 교육비 준비 가능' },
+        { rank: '서민', min: 50000000, icon: '⭐', color: 'from-yellow-500 to-orange-500', textColor: 'text-yellow-700', bgColor: 'bg-yellow-100', desc: '5천만원 이상의 자산을 보유하고 있습니다. 목표를 향해 꾸준히 전진 중입니다.', benefit: '비상금 확보 완료, 투자 시작 가능 자금' },
+        { rank: '차상위자', min: 10000000, icon: '🔶', color: 'from-orange-500 to-red-500', textColor: 'text-orange-700', bgColor: 'bg-orange-100', desc: '1천만원 이상의 자산으로 성장 중입니다. 저축 습관이 잘 갖춰져 있습니다.', benefit: '기초 비상금 마련, 재테크 시작 단계' },
+        { rank: '기초수급자', min: 0, icon: '🌱', color: 'from-gray-500 to-slate-500', textColor: 'text-gray-700', bgColor: 'bg-gray-100', desc: '자산 형성의 시작 단계입니다. 작은 금액부터 차근차근 모아가세요!', benefit: '성장 가능성 무한대! 지금부터 시작하면 됩니다' }
+      ];
+      
+      // 현재 등급 인덱스 찾기
+      var currentRankIndex = ranks.findIndex(function(r) { return r.rank === currentRankInfo.rank; });
+      
+      // 다음 등급 정보
+      var nextRank = currentRankIndex > 0 ? ranks[currentRankIndex - 1] : null;
+      var amountToNext = nextRank ? nextRank.min - totalBankBalance : 0;
+      var progressToNext = nextRank ? Math.min((totalBankBalance / nextRank.min) * 100, 100) : 100;
+      
+      var ranksHtml = ranks.map(function(r, idx) {
+        var isCurrent = r.rank === currentRankInfo.rank;
+        var isAchieved = totalBankBalance >= r.min;
+        
+        return '<div class="' + (isCurrent ? 'ring-2 ring-offset-2 ring-purple-500 transform scale-[1.02]' : '') + ' ' + (isAchieved ? 'opacity-100' : 'opacity-50') + ' bg-gradient-to-r ' + r.color + ' rounded-2xl p-4 text-white relative overflow-hidden transition-all">' +
+          (isCurrent ? '<div class="absolute top-2 right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full shadow">현재 등급</div>' : '') +
+          (isAchieved && !isCurrent ? '<div class="absolute top-2 right-2 bg-green-400 text-green-900 text-xs font-bold px-2 py-1 rounded-full">✓ 달성</div>' : '') +
+          '<div class="flex items-center gap-3 mb-3">' +
+            '<div class="text-4xl">' + r.icon + '</div>' +
+            '<div>' +
+              '<div class="text-xl font-bold text-white drop-shadow">' + r.rank + '</div>' +
+              '<div class="text-sm text-white font-medium">' + (r.min > 0 ? formatNumber(r.min) + '원 이상' : '시작 등급') + '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="text-sm text-white font-medium mb-3 drop-shadow">' + r.desc + '</div>' +
+          '<div class="bg-yellow-100 rounded-lg p-3 text-sm border border-yellow-300">' +
+            '<span class="text-yellow-700 font-bold">💡 혜택:</span> <span class="text-yellow-800 font-medium">' + r.benefit + '</span>' +
+          '</div>' +
+        '</div>';
+      }).join('');
+      
+      return '<div class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50" onclick="if(event.target===this){state.showRankInfo=false;render();}">' +
+        '<div class="bg-white rounded-3xl w-full max-w-lg max-h-[95vh] overflow-hidden shadow-2xl">' +
+          // 헤더
+          '<div class="bg-gradient-to-r ' + ranks[currentRankIndex].color + ' p-6 text-white relative">' +
+            '<button onclick="state.showRankInfo=false;render()" class="absolute top-4 right-4 text-white text-2xl hover:bg-white hover:bg-opacity-20 rounded-full w-8 h-8 flex items-center justify-center transition">✕</button>' +
+            '<div class="text-center">' +
+              '<div class="text-6xl mb-3">' + currentRankInfo.icon + '</div>' +
+              '<div class="text-2xl font-bold mb-1">' + currentRankInfo.rank + '</div>' +
+              '<div class="text-white text-opacity-90">현재 총 자산: ' + formatNumber(totalBankBalance) + '원</div>' +
+            '</div>' +
+          '</div>' +
+          
+          // 다음 등급까지 진행률
+          (nextRank ? 
+          '<div class="p-4 bg-gradient-to-r from-purple-50 to-indigo-50 border-b">' +
+            '<div class="flex justify-between items-center mb-2">' +
+              '<span class="text-sm font-medium text-purple-700">다음 등급: ' + nextRank.icon + ' ' + nextRank.rank + '</span>' +
+              '<span class="text-sm font-bold text-purple-600">' + progressToNext.toFixed(1) + '%</span>' +
+            '</div>' +
+            '<div class="w-full bg-purple-200 rounded-full h-4 overflow-hidden">' +
+              '<div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-4 rounded-full transition-all duration-500 flex items-center justify-end pr-2" style="width: ' + progressToNext + '%">' +
+                (progressToNext > 20 ? '<span class="text-white text-xs font-bold">' + progressToNext.toFixed(0) + '%</span>' : '') +
+              '</div>' +
+            '</div>' +
+            '<div class="text-center mt-2 text-sm text-purple-600">' +
+              '<span class="font-bold">' + formatNumber(amountToNext) + '원</span> 더 모으면 <span class="font-bold">' + nextRank.rank + '</span> 달성!' +
+            '</div>' +
+          '</div>' : 
+          '<div class="p-4 bg-gradient-to-r from-yellow-50 to-amber-50 border-b text-center">' +
+            '<div class="text-2xl mb-1">🎊</div>' +
+            '<div class="text-amber-700 font-bold">축하합니다! 최고 등급에 도달하셨습니다!</div>' +
+          '</div>') +
+          
+          // 등급 목록
+          '<div class="p-4 overflow-y-auto" style="max-height: 50vh">' +
+            '<h3 class="font-bold text-gray-800 mb-1 flex items-center gap-2"><span>🏅</span> 전체 등급 안내</h3>' +
+            '<p class="text-xs text-gray-500 mb-3">(전체 통장 잔고 기준)</p>' +
+            '<div class="space-y-3">' +
+              ranksHtml +
             '</div>' +
           '</div>' +
         '</div>' +
@@ -333,21 +738,38 @@
       var necessaryExpense = monthlyTx.filter(function(t) { return t.type === 'expense' && t.isNecessary; }).reduce(function(s, t) { return s + t.amount; }, 0);
       var unnecessaryExpense = monthlyTx.filter(function(t) { return t.type === 'expense' && !t.isNecessary; }).reduce(function(s, t) { return s + t.amount; }, 0);
 
-      var installmentTx = state.transactions.filter(function(t) { return t.installment > 0; });
-      var monthlyInstallment = installmentTx.reduce(function(sum, t) {
-        var tDate = new Date(t.date);
-        var monthsSinceStart = (currentYear - tDate.getFullYear()) * 12 + (currentMonth - tDate.getMonth());
-        if (monthsSinceStart >= 0 && monthsSinceStart < t.installment) {
-          return sum + (t.amount / t.installment);
-        }
-        return sum;
+      // 이번 달 할부금 계산 (installmentInfo가 있는 거래 기준)
+      var monthlyInstallment = monthlyTx.filter(function(t) {
+        return t.installmentInfo && t.installmentInfo.total > 1;
+      }).reduce(function(sum, t) {
+        return sum + t.amount;
       }, 0);
 
-      var remainingInstallment = installmentTx.reduce(function(sum, t) {
-        var tDate = new Date(t.date);
-        var monthsSinceStart = (currentYear - tDate.getFullYear()) * 12 + (currentMonth - tDate.getMonth());
-        var remainingMonths = Math.max(0, t.installment - monthsSinceStart);
-        return sum + (t.amount / t.installment * remainingMonths);
+      // 남은 할부금 계산
+      // installmentInfo가 있는 고유한 할부 거래 찾기
+      var uniqueInstallments = {};
+      state.transactions.filter(function(t) {
+        return t.installmentInfo && t.installmentInfo.total > 1 && t.installmentInfo.startDate;
+      }).forEach(function(t) {
+        var key = t.installmentInfo.startDate + '_' + t.installmentInfo.originalAmount;
+        if (!uniqueInstallments[key]) {
+          uniqueInstallments[key] = t.installmentInfo;
+        }
+      });
+
+      var remainingInstallment = Object.values(uniqueInstallments).reduce(function(sum, info) {
+        var startDate = new Date(info.startDate);
+        var startYear = startDate.getFullYear();
+        var startMonth = startDate.getMonth();
+        var monthlyAmount = info.monthlyAmount;
+        var totalInstallments = info.total;
+        
+        // 현재까지 경과한 개월 수
+        var monthsPassed = (currentYear - startYear) * 12 + (currentMonth - startMonth) + 1;
+        // 남은 개월 수
+        var remainingMonths = Math.max(0, totalInstallments - monthsPassed);
+        
+        return sum + (monthlyAmount * remainingMonths);
       }, 0);
 
       var totalBalance = totalIncome - totalExpense;
@@ -426,27 +848,178 @@
       '</div>';
     }
 
+    // Fixed expense expand state
+    var fixedExpenseExpanded = false;
+    
+    function toggleFixedExpenseList() {
+      fixedExpenseExpanded = !fixedExpenseExpanded;
+      var hiddenItems = document.getElementById('fixed-expense-hidden');
+      var toggleBtn = document.getElementById('fixed-expense-toggle-btn');
+      
+      if (hiddenItems && toggleBtn) {
+        if (fixedExpenseExpanded) {
+          hiddenItems.classList.remove('hidden');
+          toggleBtn.innerHTML = '<i data-lucide="chevron-up" class="w-4 h-4 inline"></i> 접기';
+        } else {
+          hiddenItems.classList.add('hidden');
+          toggleBtn.innerHTML = '<i data-lucide="chevron-down" class="w-4 h-4 inline"></i> 더보기 (' + (document.querySelectorAll('#fixed-expense-hidden > div').length) + '건)';
+        }
+        lucide.createIcons();
+      }
+    }
+
     // History Screen
     function renderHistoryScreen() {
-      return '<div class="p-4" id="history-screen">' +
-        '<div class="mb-4 space-y-2">' +
-          '<div class="grid grid-cols-2 gap-2">' +
-            '<div><label class="block text-xs text-gray-600 mb-1">시작일</label><input type="date" id="startDate" class="w-full p-2 border rounded text-sm"></div>' +
-            '<div><label class="block text-xs text-gray-600 mb-1">종료일</label><input type="date" id="endDate" class="w-full p-2 border rounded text-sm"></div>' +
+      // 월 고정비 섹션 생성
+      var activeFixedExpenses = state.fixedExpenses.filter(function(fe) { return fe.active; });
+      var inactiveFixedExpenses = state.fixedExpenses.filter(function(fe) { return !fe.active; });
+      var totalMonthlyFixed = activeFixedExpenses.reduce(function(sum, fe) { return sum + fe.amount; }, 0);
+      
+      // 표시할 고정비 (처음 2개)
+      var visibleFixedExpenses = activeFixedExpenses.slice(0, 2);
+      // 숨겨진 고정비 (3개 이상일 때)
+      var hiddenFixedExpenses = activeFixedExpenses.slice(2);
+      
+      var fixedExpenseHtml = '<div class="bg-white rounded-xl shadow-lg p-4 mb-4">' +
+        '<div class="flex justify-between items-center mb-3">' +
+          '<h3 class="font-bold text-purple-700">📅 월 고정비</h3>' +
+          '<div class="bg-purple-100 px-3 py-1 rounded-lg">' +
+            '<span class="text-sm text-purple-600">월 합계: </span>' +
+            '<span class="font-bold text-purple-700">' + formatNumber(totalMonthlyFixed) + '원</span>' +
           '</div>' +
-          '<input type="text" id="searchKeyword" class="w-full p-2 border rounded" placeholder="키워드 검색">' +
+        '</div>';
+      
+      if (activeFixedExpenses.length === 0 && inactiveFixedExpenses.length === 0) {
+        fixedExpenseHtml += '<div class="text-center text-gray-400 py-4">등록된 고정비가 없습니다.<br><span class="text-sm">거래 추가에서 "고정비" 체크 후 등록하세요.</span></div>';
+      } else {
+        if (activeFixedExpenses.length > 0) {
+          // 항상 보이는 항목들 (최대 2개)
+          fixedExpenseHtml += '<div class="space-y-2 mb-3">';
+          visibleFixedExpenses.forEach(function(fe) {
+            var payMethodLabel = fe.paymentMethod === 'card' ? '카드' : fe.paymentMethod === 'cash' ? '현금' : '기타';
+            fixedExpenseHtml += '<div class="flex justify-between items-center p-3 bg-purple-50 rounded-lg border border-purple-200">' +
+              '<div class="flex-1">' +
+                '<div class="font-medium text-gray-800">' + fe.category + ' <span class="text-xs text-gray-500">(' + payMethodLabel + ')</span></div>' +
+                '<div class="text-xs text-gray-500">매월 ' + fe.payDay + '일 | ' + fe.startDate + ' ~ ' + (fe.endDate || '무기한') + '</div>' +
+                (fe.memo ? '<div class="text-xs text-gray-400 mt-1">' + fe.memo + '</div>' : '') +
+              '</div>' +
+              '<div class="text-right">' +
+                '<div class="font-bold text-purple-600">' + formatNumber(fe.amount) + '원</div>' +
+                '<div class="flex gap-1 mt-1">' +
+                  '<button onclick="editFixedExpense(' + fe.id + ')" class="text-xs text-blue-500 px-2 py-0.5 hover:bg-blue-50 rounded">수정</button>' +
+                  '<button onclick="deleteFixedExpense(' + fe.id + ')" class="text-xs text-red-500 px-2 py-0.5 hover:bg-red-50 rounded">종료</button>' +
+                '</div>' +
+              '</div>' +
+            '</div>';
+          });
+          fixedExpenseHtml += '</div>';
+          
+          // 숨겨진 항목들 (3개 이상일 때)
+          if (hiddenFixedExpenses.length > 0) {
+            fixedExpenseHtml += '<div id="fixed-expense-hidden" class="' + (fixedExpenseExpanded ? '' : 'hidden') + ' space-y-2 mb-3">';
+            hiddenFixedExpenses.forEach(function(fe) {
+              var payMethodLabel = fe.paymentMethod === 'card' ? '카드' : fe.paymentMethod === 'cash' ? '현금' : '기타';
+              fixedExpenseHtml += '<div class="flex justify-between items-center p-3 bg-purple-50 rounded-lg border border-purple-200">' +
+                '<div class="flex-1">' +
+                  '<div class="font-medium text-gray-800">' + fe.category + ' <span class="text-xs text-gray-500">(' + payMethodLabel + ')</span></div>' +
+                  '<div class="text-xs text-gray-500">매월 ' + fe.payDay + '일 | ' + fe.startDate + ' ~ ' + (fe.endDate || '무기한') + '</div>' +
+                  (fe.memo ? '<div class="text-xs text-gray-400 mt-1">' + fe.memo + '</div>' : '') +
+                '</div>' +
+                '<div class="text-right">' +
+                  '<div class="font-bold text-purple-600">' + formatNumber(fe.amount) + '원</div>' +
+                  '<div class="flex gap-1 mt-1">' +
+                    '<button onclick="editFixedExpense(' + fe.id + ')" class="text-xs text-blue-500 px-2 py-0.5 hover:bg-blue-50 rounded">수정</button>' +
+                    '<button onclick="deleteFixedExpense(' + fe.id + ')" class="text-xs text-red-500 px-2 py-0.5 hover:bg-red-50 rounded">종료</button>' +
+                  '</div>' +
+                '</div>' +
+              '</div>';
+            });
+            fixedExpenseHtml += '</div>';
+            
+            // 더보기/접기 버튼
+            fixedExpenseHtml += '<button id="fixed-expense-toggle-btn" onclick="toggleFixedExpenseList()" class="w-full py-2 text-sm text-purple-600 font-medium hover:bg-purple-50 rounded-lg transition flex items-center justify-center gap-1">' +
+              (fixedExpenseExpanded ? '<i data-lucide="chevron-up" class="w-4 h-4"></i> 접기' : '<i data-lucide="chevron-down" class="w-4 h-4"></i> 더보기 (' + hiddenFixedExpenses.length + '건)') +
+            '</button>';
+          }
+        }
+        
+        if (inactiveFixedExpenses.length > 0) {
+          fixedExpenseHtml += '<div class="border-t pt-3 mt-3">' +
+            '<div class="text-xs text-gray-500 mb-2">종료된 고정비 (' + inactiveFixedExpenses.length + '건)</div>' +
+            '<div class="space-y-1">';
+          inactiveFixedExpenses.forEach(function(fe) {
+            fixedExpenseHtml += '<div class="flex justify-between items-center p-2 bg-gray-50 rounded-lg opacity-60">' +
+              '<div class="text-sm text-gray-600">' + fe.category + ' - ' + formatNumber(fe.amount) + '원</div>' +
+              '<button onclick="permanentDeleteFixedExpense(' + fe.id + ')" class="text-xs text-red-400 px-2">삭제</button>' +
+            '</div>';
+          });
+          fixedExpenseHtml += '</div></div>';
+        }
+      }
+      
+      fixedExpenseHtml += '</div>';
+      
+      return '<div class="p-4" id="history-screen">' +
+        // 거래내역 헤더 타이틀
+        '<div class="mb-5">' +
+          '<div class="flex items-center gap-3 mb-4">' +
+            '<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg">' +
+              '<i data-lucide="receipt" class="w-6 h-6 text-white"></i>' +
+            '</div>' +
+            '<div>' +
+              '<h2 class="text-xl font-bold text-gray-800">거래내역</h2>' +
+              '<p class="text-sm text-gray-500">모든 수입과 지출을 한눈에</p>' +
+            '</div>' +
+          '</div>' +
         '</div>' +
+        // 날짜 및 검색 UI 개선
+        '<div class="bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 rounded-2xl p-4 mb-4 shadow-sm border border-indigo-100">' +
+          '<div class="flex items-center gap-2 mb-3">' +
+            '<div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">' +
+              '<i data-lucide="calendar-range" class="w-4 h-4 text-white"></i>' +
+            '</div>' +
+            '<span class="font-semibold text-gray-700">기간 선택</span>' +
+          '</div>' +
+          '<div class="grid grid-cols-2 gap-3 mb-3">' +
+            '<div class="relative">' +
+              '<label class="block text-xs font-medium text-indigo-600 mb-1.5">📅 시작일</label>' +
+              '<input type="date" id="startDate" class="w-full px-3 py-2.5 bg-white border-2 border-indigo-200 rounded-xl text-sm font-medium text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all shadow-sm">' +
+            '</div>' +
+            '<div class="relative">' +
+              '<label class="block text-xs font-medium text-purple-600 mb-1.5">📅 종료일</label>' +
+              '<input type="date" id="endDate" class="w-full px-3 py-2.5 bg-white border-2 border-purple-200 rounded-xl text-sm font-medium text-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all shadow-sm">' +
+            '</div>' +
+          '</div>' +
+          '<div class="relative">' +
+            '<div class="flex items-center gap-2 mb-1.5">' +
+              '<div class="w-6 h-6 rounded-md bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center">' +
+                '<i data-lucide="search" class="w-3 h-3 text-white"></i>' +
+              '</div>' +
+              '<label class="text-xs font-medium text-pink-600">키워드 검색</label>' +
+            '</div>' +
+            '<div class="relative">' +
+              '<input type="text" id="searchKeyword" class="w-full pl-10 pr-4 py-2.5 bg-white border-2 border-pink-200 rounded-xl text-sm font-medium placeholder-gray-400 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition-all shadow-sm" placeholder="카테고리, 메모, 금액 등 검색...">' +
+              '<i data-lucide="search" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-pink-400"></i>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+        fixedExpenseHtml +
         '<div class="flex gap-2 mb-4 overflow-x-auto pb-2 no-scrollbar">' +
           '<button onclick="setHistoryPeriod(\'daily\')" class="period-btn px-4 py-2 rounded-lg whitespace-nowrap transition bg-blue-500 text-white shadow-md" data-period="daily">일별</button>' +
           '<button onclick="setHistoryPeriod(\'weekly\')" class="period-btn px-4 py-2 rounded-lg whitespace-nowrap transition bg-gray-200" data-period="weekly">주별</button>' +
           '<button onclick="setHistoryPeriod(\'monthly\')" class="period-btn px-4 py-2 rounded-lg whitespace-nowrap transition bg-gray-200" data-period="monthly">월별</button>' +
           '<button onclick="setHistoryPeriod(\'yearly\')" class="period-btn px-4 py-2 rounded-lg whitespace-nowrap transition bg-gray-200" data-period="yearly">년도별</button>' +
+          '<button onclick="setHistoryPeriod(\'calendar\')" class="period-btn px-4 py-2 rounded-lg whitespace-nowrap transition bg-gray-200" data-period="calendar">달력</button>' +
         '</div>' +
+        '<div id="calendar-container" class="hidden"></div>' +
         '<div id="history-list" class="space-y-4"></div>' +
       '</div>';
     }
 
     var historyPeriod = 'daily';
+
+    var calendarYear = new Date().getFullYear();
+    var calendarMonth = new Date().getMonth();
 
     function setHistoryPeriod(period) {
       historyPeriod = period;
@@ -457,7 +1030,220 @@
           btn.className = 'period-btn px-4 py-2 rounded-lg whitespace-nowrap transition bg-gray-200';
         }
       });
-      updateHistoryList();
+      
+      var calendarContainer = document.getElementById('calendar-container');
+      var historyList = document.getElementById('history-list');
+      
+      if (period === 'calendar') {
+        if (calendarContainer) calendarContainer.classList.remove('hidden');
+        if (historyList) historyList.classList.add('hidden');
+        renderCalendar();
+      } else {
+        if (calendarContainer) calendarContainer.classList.add('hidden');
+        if (historyList) historyList.classList.remove('hidden');
+        updateHistoryList();
+      }
+    }
+
+    function renderCalendar() {
+      var container = document.getElementById('calendar-container');
+      if (!container) return;
+
+      var year = calendarYear;
+      var month = calendarMonth;
+      var monthNames = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
+      var dayNames = ['일', '월', '화', '수', '목', '금', '토'];
+
+      var firstDay = new Date(year, month, 1);
+      var lastDay = new Date(year, month + 1, 0);
+      var startDay = firstDay.getDay();
+      var totalDays = lastDay.getDate();
+
+      // Get transactions for this month
+      var monthTransactions = {};
+      state.transactions.forEach(function(t) {
+        var tDate = new Date(t.date);
+        if (tDate.getFullYear() === year && tDate.getMonth() === month) {
+          var day = tDate.getDate();
+          if (!monthTransactions[day]) {
+            monthTransactions[day] = { income: 0, expense: 0, transactions: [] };
+          }
+          if (t.type === 'income') {
+            monthTransactions[day].income += t.amount;
+          } else {
+            monthTransactions[day].expense += t.amount;
+          }
+          monthTransactions[day].transactions.push(t);
+        }
+      });
+
+      // Calculate monthly totals
+      var monthlyIncome = 0;
+      var monthlyExpense = 0;
+      Object.values(monthTransactions).forEach(function(day) {
+        monthlyIncome += day.income;
+        monthlyExpense += day.expense;
+      });
+
+      var html = '<div class="bg-white rounded-xl shadow-lg p-4 mb-4">' +
+        '<div class="flex justify-between items-center mb-4">' +
+          '<button onclick="changeCalendarMonth(-1)" class="p-2 hover:bg-gray-100 rounded-lg text-xl font-bold text-gray-600">◀</button>' +
+          '<div class="text-center">' +
+            '<h3 class="text-xl font-bold text-gray-800">' + year + '년 ' + monthNames[month] + '</h3>' +
+            '<div class="flex gap-4 justify-center mt-1 text-sm">' +
+              '<span class="text-green-600 font-medium">수입: ' + formatNumber(monthlyIncome) + '원</span>' +
+              '<span class="text-red-600 font-medium">지출: ' + formatNumber(monthlyExpense) + '원</span>' +
+            '</div>' +
+          '</div>' +
+          '<button onclick="changeCalendarMonth(1)" class="p-2 hover:bg-gray-100 rounded-lg text-xl font-bold text-gray-600">▶</button>' +
+        '</div>' +
+        '<div class="grid grid-cols-7 gap-1 mb-2">';
+
+      // Day headers
+      dayNames.forEach(function(day, idx) {
+        var color = idx === 0 ? 'text-red-500' : idx === 6 ? 'text-blue-500' : 'text-gray-700';
+        html += '<div class="text-center text-sm font-bold ' + color + ' py-2">' + day + '</div>';
+      });
+
+      html += '</div><div class="grid grid-cols-7 gap-1">';
+
+      // Empty cells before first day
+      for (var i = 0; i < startDay; i++) {
+        html += '<div class="h-20 bg-gray-50 rounded-lg"></div>';
+      }
+
+      // Day cells
+      var today = new Date();
+      for (var day = 1; day <= totalDays; day++) {
+        var isToday = today.getFullYear() === year && today.getMonth() === month && today.getDate() === day;
+        var dayOfWeek = (startDay + day - 1) % 7;
+        var isSunday = dayOfWeek === 0;
+        var isSaturday = dayOfWeek === 6;
+        var dayData = monthTransactions[day];
+
+        var cellBg = isToday ? 'bg-blue-100 border-2 border-blue-500' : 'bg-gray-50 hover:bg-gray-100';
+        var dayColor = isSunday ? 'text-red-500' : isSaturday ? 'text-blue-500' : 'text-gray-700';
+
+        html += '<div onclick="showDayTransactions(' + year + ',' + month + ',' + day + ')" class="h-20 ' + cellBg + ' rounded-lg p-1 cursor-pointer transition relative overflow-hidden">' +
+          '<div class="text-xs font-bold ' + dayColor + '">' + day + '</div>';
+
+        if (dayData) {
+          if (dayData.income > 0) {
+            html += '<div class="text-xs text-green-600 font-medium truncate">+' + (dayData.income >= 10000 ? Math.floor(dayData.income / 10000) + '만' : formatNumber(dayData.income)) + '</div>';
+          }
+          if (dayData.expense > 0) {
+            html += '<div class="text-xs text-red-600 font-medium truncate">-' + (dayData.expense >= 10000 ? Math.floor(dayData.expense / 10000) + '만' : formatNumber(dayData.expense)) + '</div>';
+          }
+          if (dayData.transactions.length > 2) {
+            html += '<div class="text-xs text-gray-400">+' + (dayData.transactions.length - 2) + '건</div>';
+          }
+        }
+
+        html += '</div>';
+      }
+
+      // Empty cells after last day
+      var remainingCells = 7 - ((startDay + totalDays) % 7);
+      if (remainingCells < 7) {
+        for (var i = 0; i < remainingCells; i++) {
+          html += '<div class="h-20 bg-gray-50 rounded-lg"></div>';
+        }
+      }
+
+      html += '</div></div>' +
+        '<div id="day-transactions-popup" class="hidden"></div>';
+
+      container.innerHTML = html;
+    }
+
+    function changeCalendarMonth(delta) {
+      calendarMonth += delta;
+      if (calendarMonth > 11) {
+        calendarMonth = 0;
+        calendarYear++;
+      } else if (calendarMonth < 0) {
+        calendarMonth = 11;
+        calendarYear--;
+      }
+      renderCalendar();
+    }
+
+    function showDayTransactions(year, month, day) {
+      var dateStr = year + '-' + String(month + 1).padStart(2, '0') + '-' + String(day).padStart(2, '0');
+      var dayTransactions = state.transactions.filter(function(t) {
+        return t.date === dateStr;
+      });
+
+      if (dayTransactions.length === 0) {
+        var popup = document.getElementById('day-transactions-popup');
+        if (popup) {
+          popup.innerHTML = '<div class="bg-white rounded-xl shadow-lg p-4 mt-4 border-2 border-blue-200">' +
+            '<div class="flex justify-between items-center mb-3">' +
+              '<h4 class="font-bold text-gray-800">📅 ' + dateStr + '</h4>' +
+              '<button onclick="closeDayPopup()" class="text-gray-500 text-xl">✕</button>' +
+            '</div>' +
+            '<div class="text-center text-gray-400 py-4">거래 내역이 없습니다</div>' +
+            '<button onclick="openAddTransactionWithDate(\'' + dateStr + '\')" class="w-full bg-blue-500 text-white py-2 rounded-lg font-medium mt-2">+ 거래 추가</button>' +
+          '</div>';
+          popup.classList.remove('hidden');
+        }
+        return;
+      }
+
+      var income = dayTransactions.filter(function(t) { return t.type === 'income'; }).reduce(function(s, t) { return s + t.amount; }, 0);
+      var expense = dayTransactions.filter(function(t) { return t.type === 'expense'; }).reduce(function(s, t) { return s + t.amount; }, 0);
+
+      var txHtml = dayTransactions.map(function(t) {
+        return '<div class="flex justify-between items-center py-2 border-b last:border-b-0">' +
+          '<div>' +
+            '<div class="font-medium">' + t.category + '</div>' +
+            '<div class="text-xs text-gray-500">' + (t.memo || '') + '</div>' +
+          '</div>' +
+          '<div class="flex items-center gap-2">' +
+            '<div class="font-bold ' + (t.type === 'income' ? 'text-green-600' : 'text-red-600') + '">' +
+              (t.type === 'income' ? '+' : '-') + formatNumber(t.amount) + '원' +
+            '</div>' +
+            '<button onclick="deleteTransaction(' + t.id + ');renderCalendar();" class="text-red-400 text-xs">삭제</button>' +
+          '</div>' +
+        '</div>';
+      }).join('');
+
+      var popup = document.getElementById('day-transactions-popup');
+      if (popup) {
+        popup.innerHTML = '<div class="bg-white rounded-xl shadow-lg p-4 mt-4 border-2 border-blue-200">' +
+          '<div class="flex justify-between items-center mb-3">' +
+            '<h4 class="font-bold text-gray-800">📅 ' + dateStr + '</h4>' +
+            '<button onclick="closeDayPopup()" class="text-gray-500 text-xl">✕</button>' +
+          '</div>' +
+          '<div class="grid grid-cols-2 gap-2 mb-3">' +
+            '<div class="bg-green-50 p-2 rounded-lg text-center">' +
+              '<div class="text-xs text-green-600">수입</div>' +
+              '<div class="font-bold text-green-700">' + formatNumber(income) + '원</div>' +
+            '</div>' +
+            '<div class="bg-red-50 p-2 rounded-lg text-center">' +
+              '<div class="text-xs text-red-600">지출</div>' +
+              '<div class="font-bold text-red-700">' + formatNumber(expense) + '원</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="max-h-60 overflow-y-auto">' + txHtml + '</div>' +
+          '<button onclick="openAddTransactionWithDate(\'' + dateStr + '\')" class="w-full bg-blue-500 text-white py-2 rounded-lg font-medium mt-3">+ 거래 추가</button>' +
+        '</div>';
+        popup.classList.remove('hidden');
+      }
+    }
+
+    function closeDayPopup() {
+      var popup = document.getElementById('day-transactions-popup');
+      if (popup) popup.classList.add('hidden');
+    }
+
+    function openAddTransactionWithDate(dateStr) {
+      state.showAddTransaction = true;
+      render();
+      setTimeout(function() {
+        var dateInput = document.getElementById('txDate');
+        if (dateInput) dateInput.value = dateStr;
+      }, 100);
     }
 
     function updateHistoryList() {
@@ -470,7 +1256,64 @@
         var start = startDate ? new Date(startDate) : null;
         var end = endDate ? new Date(endDate) : null;
         var dateMatch = (!start || tDate >= start) && (!end || tDate <= end);
-        var keywordMatch = !keyword || t.category.indexOf(keyword) >= 0 || (t.memo && t.memo.indexOf(keyword) >= 0);
+        
+        // 키워드 검색 (카테고리, 메모, 결제수단, 할부, 유형 등 모든 필드 검색)
+        var keywordMatch = true;
+        if (keyword) {
+          var kw = keyword.toLowerCase();
+          var searchFields = [];
+          
+          // 카테고리
+          searchFields.push(t.category || '');
+          
+          // 메모
+          searchFields.push(t.memo || '');
+          
+          // 결제수단 (카드/현금)
+          if (t.paymentMethod === 'card') {
+            searchFields.push('카드');
+          } else if (t.paymentMethod === 'cash') {
+            searchFields.push('현금');
+          }
+          
+          // 할부
+          if (t.installment && t.installment > 0) {
+            searchFields.push('할부');
+            searchFields.push(t.installment + '개월');
+          } else {
+            searchFields.push('일시불');
+          }
+          
+          // 유형 (수입/지출)
+          if (t.type === 'income') {
+            searchFields.push('수입');
+          } else {
+            searchFields.push('지출');
+          }
+          
+          // 필요/불필요 지출
+          if (t.type === 'expense') {
+            if (t.isNecessary) {
+              searchFields.push('필요');
+              searchFields.push('필요지출');
+            } else {
+              searchFields.push('불필요');
+              searchFields.push('불필요지출');
+            }
+          }
+          
+          // 날짜
+          searchFields.push(t.date || '');
+          
+          // 금액
+          searchFields.push(String(t.amount || ''));
+          
+          // 모든 필드에서 검색
+          keywordMatch = searchFields.some(function(field) {
+            return field.toLowerCase().indexOf(kw) >= 0;
+          });
+        }
+        
         return dateMatch && keywordMatch;
       });
 
@@ -516,10 +1359,34 @@
             '</div>' +
           '</div>' +
           txs.map(function(t) {
+            // Calculate payment info with installment progress
+            var paymentInfo = '';
+            if (t.type === 'expense') {
+              if (t.paymentMethod === 'cash') {
+                paymentInfo = '(현금)';
+              } else if (t.paymentMethod === 'other') {
+                paymentInfo = '(기타)';
+              } else if (t.paymentMethod === 'card') {
+                // Check if this is an auto-split installment transaction
+                if (t.installmentInfo) {
+                  paymentInfo = '(카드' + t.installmentInfo.current + '/' + t.installmentInfo.total + ')';
+                } else if (t.installment && t.installment > 1) {
+                  // Old style installment - calculate progress
+                  var tDate = new Date(t.date);
+                  var now = new Date();
+                  var monthsPassed = (now.getFullYear() - tDate.getFullYear()) * 12 + (now.getMonth() - tDate.getMonth());
+                  var currentInstallment = Math.min(monthsPassed + 1, t.installment);
+                  paymentInfo = '(카드' + currentInstallment + '/' + t.installment + ')';
+                } else {
+                  paymentInfo = '(카드)';
+                }
+              }
+            }
+            
             return '<div class="border-b py-2 last:border-b-0">' +
               '<div class="flex justify-between items-center">' +
                 '<div class="flex-1">' +
-                  '<div class="font-medium">' + t.category + '</div>' +
+                  '<div class="font-medium">' + t.category + '<span class="text-gray-500 text-sm ml-1">' + paymentInfo + '</span></div>' +
                   '<div class="text-xs text-gray-500">' + t.date + (t.memo ? ' - ' + t.memo : '') + '</div>' +
                 '</div>' +
                 '<div class="flex items-center gap-2">' +
@@ -1209,7 +2076,10 @@
       var bankListHtml = state.bankBalances.map(function(b) {
         return '<div class="flex justify-between items-center p-3 border rounded-lg bg-gray-50">' +
           '<div><div class="font-medium">' + b.name + '</div><div class="text-sm text-gray-600">' + formatNumber(b.balance) + '원</div></div>' +
-          '<button onclick="deleteBank(' + b.id + ')" class="text-red-500 text-sm px-2 py-1 hover:bg-red-50 rounded">삭제</button>' +
+          '<div class="flex gap-1">' +
+            '<button onclick="editBank(' + b.id + ')" class="text-blue-500 text-sm px-2 py-1 hover:bg-blue-50 rounded">수정</button>' +
+            '<button onclick="deleteBank(' + b.id + ')" class="text-red-500 text-sm px-2 py-1 hover:bg-red-50 rounded">삭제</button>' +
+          '</div>' +
         '</div>';
       }).join('');
 
@@ -1312,13 +2182,13 @@
           '<h3 class="font-bold mb-4">🎯 수입 목표</h3>' +
           '<div class="space-y-3">' +
             '<div><label class="block text-sm font-medium mb-1 text-purple-700">👑 7년 목표</label>' +
-              '<input type="number" id="goal-year7" value="' + state.goals.year7 + '" class="w-full p-2 border rounded-lg" placeholder="금액 입력"></div>' +
+              '<input type="text" id="goal-year7" value="' + (state.goals.year7 ? Number(state.goals.year7).toLocaleString() : '') + '" class="w-full p-2 border rounded-lg" placeholder="금액 입력" oninput="formatAmountInput(this)"></div>' +
             '<div><label class="block text-sm font-medium mb-1 text-blue-700">💎 5년 목표</label>' +
-              '<input type="number" id="goal-year5" value="' + state.goals.year5 + '" class="w-full p-2 border rounded-lg" placeholder="금액 입력"></div>' +
+              '<input type="text" id="goal-year5" value="' + (state.goals.year5 ? Number(state.goals.year5).toLocaleString() : '') + '" class="w-full p-2 border rounded-lg" placeholder="금액 입력" oninput="formatAmountInput(this)"></div>' +
             '<div><label class="block text-sm font-medium mb-1 text-green-700">🏆 3년 목표</label>' +
-              '<input type="number" id="goal-year3" value="' + state.goals.year3 + '" class="w-full p-2 border rounded-lg" placeholder="금액 입력"></div>' +
+              '<input type="text" id="goal-year3" value="' + (state.goals.year3 ? Number(state.goals.year3).toLocaleString() : '') + '" class="w-full p-2 border rounded-lg" placeholder="금액 입력" oninput="formatAmountInput(this)"></div>' +
             '<div><label class="block text-sm font-medium mb-1 text-yellow-700">⭐ 올해 목표</label>' +
-              '<input type="number" id="goal-thisYear" value="' + state.goals.thisYear + '" class="w-full p-2 border rounded-lg" placeholder="금액 입력"></div>' +
+              '<input type="text" id="goal-thisYear" value="' + (state.goals.thisYear ? Number(state.goals.thisYear).toLocaleString() : '') + '" class="w-full p-2 border rounded-lg" placeholder="금액 입력" oninput="formatAmountInput(this)"></div>' +
             '<button onclick="saveGoals()" class="w-full bg-blue-500 text-white py-2 rounded-lg font-medium">목표 저장</button>' +
           '</div>' +
         '</div>' +
@@ -1331,32 +2201,61 @@
           '<div class="space-y-2 mb-4">' + bankListHtml + '</div>' +
           '<div class="space-y-2">' +
             '<input type="text" id="newBankName" class="w-full p-2 border rounded-lg" placeholder="은행명">' +
-            '<input type="number" id="newBankBalance" class="w-full p-2 border rounded-lg" placeholder="잔고">' +
+            '<input type="text" id="newBankBalance" class="w-full p-2 border rounded-lg" placeholder="잔고" oninput="formatAmountInput(this)">' +
             '<button onclick="addBank()" class="w-full bg-green-500 text-white py-2 rounded-lg">은행 추가</button>' +
           '</div>' +
         '</div>' +
+        // Loan Section
+        renderLoanSection() +
       '</div>';
     }
 
     function saveGoals() {
       state.goals = {
-        year7: document.getElementById('goal-year7') ? document.getElementById('goal-year7').value : '',
-        year5: document.getElementById('goal-year5') ? document.getElementById('goal-year5').value : '',
-        year3: document.getElementById('goal-year3') ? document.getElementById('goal-year3').value : '',
-        thisYear: document.getElementById('goal-thisYear') ? document.getElementById('goal-thisYear').value : ''
+        year7: getAmountValue('goal-year7') || '',
+        year5: getAmountValue('goal-year5') || '',
+        year3: getAmountValue('goal-year3') || '',
+        thisYear: getAmountValue('goal-thisYear') || ''
       };
       saveData();
+      render();
       showToast('목표가 저장되었습니다');
     }
 
     function addBank() {
-      var name = document.getElementById('newBankName') ? document.getElementById('newBankName').value : '';
-      var balance = Number(document.getElementById('newBankBalance') ? document.getElementById('newBankBalance').value : 0);
-      if (!name || isNaN(balance)) { alert('은행명과 잔고를 입력해주세요'); return; }
+      var name = document.getElementById('newBankName') ? document.getElementById('newBankName').value.trim() : '';
+      var balanceStr = document.getElementById('newBankBalance') ? document.getElementById('newBankBalance').value : '0';
+      var balance = parseInt(balanceStr.replace(/[^\d]/g, ''), 10) || 0;
+      if (!name) { alert('은행명을 입력해주세요'); return; }
+      if (balance <= 0) { alert('잔고를 입력해주세요'); return; }
       state.bankBalances.push({ id: Date.now(), name: name, balance: balance });
       saveData();
       render();
       showToast('은행이 추가되었습니다');
+    }
+
+    function editBank(id) {
+      var bank = state.bankBalances.find(function(b) { return b.id === id; });
+      if (!bank) return;
+      
+      var newName = prompt('은행명:', bank.name);
+      if (newName === null) return;
+      
+      var newBalanceStr = prompt('잔고:', bank.balance.toLocaleString());
+      if (newBalanceStr === null) return;
+      
+      var newBalance = parseInt(newBalanceStr.replace(/[^\d]/g, ''), 10);
+      if (isNaN(newBalance) || newBalance < 0) {
+        alert('올바른 금액을 입력해주세요');
+        return;
+      }
+      
+      bank.name = newName.trim() || bank.name;
+      bank.balance = newBalance;
+      
+      saveData();
+      render();
+      showToast('은행 정보가 수정되었습니다');
     }
 
     function deleteBank(id) {
@@ -1370,36 +2269,285 @@
 
     // Investment Screen
     var investmentSearchKeyword = '';
+    var isComposingInvestment = false;
     
     function updateInvestmentSearch(keyword) {
       investmentSearchKeyword = keyword;
-      render();
-      // Restore focus and cursor position
-      setTimeout(function() {
-        var input = document.getElementById('investmentSearch');
-        if (input) {
-          input.focus();
-          input.setSelectionRange(keyword.length, keyword.length);
-        }
-      }, 0);
+      updateInvestmentList();
+    }
+    
+    function updateInvestmentList() {
+      var listContainer = document.getElementById('investment-list-container');
+      if (!listContainer) return;
+      
+      var typeLabels = { stock: '주식', etf: 'ETF', fund: '펀드', crypto: '암호화폐', gold: '금', realestate: '부동산', bond: '채권', other: '기타' };
+      var typeIcons = { stock: '📊', etf: '📦', fund: '💼', crypto: '🪙', gold: '🥇', realestate: '🏠', bond: '📃', other: '📄' };
+      
+      var filteredInvestments = state.investments.filter(function(inv) {
+        if (!investmentSearchKeyword) return true;
+        var keyword = investmentSearchKeyword.toLowerCase();
+        var name = inv.name.toLowerCase();
+        var typeLabel = (typeLabels[inv.type] || '기타').toLowerCase();
+        return name.indexOf(keyword) >= 0 || typeLabel.indexOf(keyword) >= 0;
+      });
+      
+      var countText = document.getElementById('investment-count');
+      if (countText) {
+        countText.textContent = '총 ' + state.investments.length + '개 종목 중 ' + filteredInvestments.length + '개 표시';
+      }
+      
+      // 투자 유형별 그라데이션 색상
+      var typeGradients = { 
+        stock: 'from-blue-500 to-indigo-600', 
+        etf: 'from-purple-500 to-pink-600', 
+        fund: 'from-emerald-500 to-teal-600', 
+        crypto: 'from-orange-500 to-amber-600', 
+        gold: 'from-yellow-500 to-orange-500', 
+        realestate: 'from-green-500 to-emerald-600', 
+        bond: 'from-gray-500 to-slate-600', 
+        other: 'from-indigo-500 to-purple-600' 
+      };
+      
+      var investListHtml = '';
+      if (state.investments.length === 0) {
+        investListHtml = '<div class="text-center py-12">' +
+          '<div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full flex items-center justify-center">' +
+            '<span class="text-3xl">📊</span>' +
+          '</div>' +
+          '<p class="text-gray-500 font-medium">아직 등록된 투자 종목이 없습니다</p>' +
+          '<p class="text-gray-400 text-sm mt-1">종목을 추가해보세요!</p>' +
+        '</div>';
+      } else if (filteredInvestments.length === 0) {
+        investListHtml = '<div class="text-center py-8">' +
+          '<div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center">' +
+            '<i data-lucide="search-x" class="w-6 h-6 text-gray-400"></i>' +
+          '</div>' +
+          '<p class="text-gray-500">"' + investmentSearchKeyword + '" 검색 결과가 없습니다</p>' +
+        '</div>';
+      } else {
+        investListHtml = filteredInvestments.map(function(inv) {
+          var invested = inv.buyPrice * inv.quantity;
+          var current = inv.currentPrice * inv.quantity;
+          var profit = current - invested;
+          var profitRate = invested > 0 ? ((profit / invested) * 100).toFixed(2) : 0;
+          var icon = typeIcons[inv.type] || '📄';
+          var label = typeLabels[inv.type] || '기타';
+          var gradient = typeGradients[inv.type] || 'from-indigo-500 to-purple-600';
+          
+          return '<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300">' +
+            '<div class="bg-gradient-to-r ' + gradient + ' p-4">' +
+              '<div class="flex justify-between items-start">' +
+                '<div class="flex items-center gap-3">' +
+                  '<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-md">' +
+                    '<span class="text-2xl">' + icon + '</span>' +
+                  '</div>' +
+                  '<div>' +
+                    '<div class="font-bold text-white text-lg drop-shadow-sm">' + inv.name + '</div>' +
+                    '<div class="flex items-center gap-2 mt-1">' +
+                      '<span class="text-xs bg-white bg-opacity-30 text-white px-2 py-0.5 rounded-full font-medium">' + label + '</span>' +
+                      '<span class="text-white text-opacity-90 text-xs">' + (Number.isInteger(inv.quantity) ? inv.quantity : inv.quantity.toFixed(4)) + '주</span>' +
+                    '</div>' +
+                  '</div>' +
+                '</div>' +
+                '<div class="text-right bg-white px-3 py-2 rounded-xl shadow-md">' +
+                  '<div class="font-bold ' + (profit >= 0 ? 'text-red-600' : 'text-blue-600') + ' text-lg">' + (profit >= 0 ? '+' : '') + formatNumber(profit) + '</div>' +
+                  '<div class="text-xs ' + (profit >= 0 ? 'text-red-500' : 'text-blue-500') + ' font-semibold">' + (profit >= 0 ? '▲' : '▼') + ' ' + Math.abs(profitRate) + '%</div>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="p-4">' +
+              '<div class="grid grid-cols-2 gap-3 mb-3">' +
+                '<div class="bg-gray-50 p-3 rounded-xl border border-gray-100">' +
+                  '<div class="text-xs text-gray-500 font-medium mb-1">📊 매입가 (1주)</div>' +
+                  '<div class="font-bold text-gray-800">' + formatNumber(inv.buyPrice) + '원</div>' +
+                '</div>' +
+                '<div class="bg-gray-50 p-3 rounded-xl border border-gray-100">' +
+                  '<div class="text-xs text-gray-500 font-medium mb-1">💹 현재가 (1주)</div>' +
+                  '<div class="font-bold text-gray-800">' + formatNumber(inv.currentPrice) + '원</div>' +
+                '</div>' +
+              '</div>' +
+              '<div class="grid grid-cols-2 gap-3 mb-4">' +
+                '<div class="bg-gradient-to-br from-indigo-50 to-blue-50 p-3 rounded-xl border border-indigo-200">' +
+                  '<div class="text-xs text-indigo-600 font-semibold mb-1">💰 총매입가</div>' +
+                  '<div class="font-bold text-indigo-700 text-lg">' + formatNumber(invested) + '원</div>' +
+                '</div>' +
+                '<div class="bg-gradient-to-br from-purple-50 to-pink-50 p-3 rounded-xl border border-purple-200">' +
+                  '<div class="text-xs text-purple-600 font-semibold mb-1">💎 총현재가</div>' +
+                  '<div class="font-bold text-purple-700 text-lg">' + formatNumber(current) + '원</div>' +
+                '</div>' +
+              '</div>' +
+              '<div class="flex gap-2">' +
+                '<button onclick="editInvestmentPrice(' + inv.id + ')" class="flex-1 bg-gradient-to-r from-blue-500 to-indigo-500 text-white py-2.5 rounded-xl font-medium text-sm hover:shadow-md transition-all duration-200 flex items-center justify-center gap-2">' +
+                  '<i data-lucide="edit-3" class="w-4 h-4"></i>' +
+                  '<span>현재가 수정</span>' +
+                '</button>' +
+                '<button onclick="deleteInvestment(' + inv.id + ')" class="flex-1 bg-gray-100 text-gray-600 py-2.5 rounded-xl font-medium text-sm hover:bg-red-50 hover:text-red-600 transition-all duration-200 flex items-center justify-center gap-2">' +
+                  '<i data-lucide="trash-2" class="w-4 h-4"></i>' +
+                  '<span>삭제</span>' +
+                '</button>' +
+              '</div>' +
+            '</div>' +
+          '</div>';
+        }).join('');
+      }
+      
+      listContainer.innerHTML = investListHtml;
+      if (typeof lucide !== 'undefined') lucide.createIcons();
     }
     
     function setDividendPeriod(period) {
       state.dividendPeriod = period;
-      render();
+      updateDividendList();
     }
+    
+    var isComposingDividend = false;
     
     function updateDividendSearch(keyword) {
       state.dividendSearchKeyword = keyword;
-      render();
-      // Restore focus and cursor position
-      setTimeout(function() {
-        var input = document.getElementById('dividendSearch');
-        if (input) {
-          input.focus();
-          input.setSelectionRange(keyword.length, keyword.length);
+      updateDividendList();
+    }
+    
+    function updateDividendList() {
+      var listContainer = document.getElementById('dividend-list-container');
+      var countText = document.getElementById('dividend-count');
+      var periodButtons = document.querySelectorAll('.dividend-period-btn');
+      
+      if (!listContainer) return;
+      
+      var dividendSearchKeyword = state.dividendSearchKeyword || '';
+      var dividendPeriod = state.dividendPeriod || 'all';
+      
+      // Update period buttons
+      periodButtons.forEach(function(btn) {
+        var period = btn.dataset.period;
+        if (period === dividendPeriod) {
+          btn.className = 'dividend-period-btn px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap bg-green-500 text-white';
+        } else {
+          btn.className = 'dividend-period-btn px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap bg-gray-200 text-gray-700';
         }
-      }, 0);
+      });
+      
+      var filteredDividends = state.dividends.filter(function(d) {
+        if (!dividendSearchKeyword) return true;
+        return d.stockName.toLowerCase().indexOf(dividendSearchKeyword.toLowerCase()) >= 0;
+      });
+      
+      if (countText) {
+        countText.textContent = '총 ' + state.dividends.length + '건 중 ' + filteredDividends.length + '건 표시';
+      }
+      
+      // Group dividends by period
+      var groupedDividends = {};
+      filteredDividends.forEach(function(d) {
+        var date = new Date(d.date);
+        var key;
+        if (dividendPeriod === 'weekly') {
+          var weekStart = new Date(date);
+          weekStart.setDate(date.getDate() - date.getDay());
+          key = weekStart.toISOString().split('T')[0] + ' 주';
+        } else if (dividendPeriod === 'monthly') {
+          key = date.getFullYear() + '-' + String(date.getMonth() + 1).padStart(2, '0');
+        } else if (dividendPeriod === 'yearly') {
+          key = date.getFullYear() + '년';
+        } else {
+          key = 'all';
+        }
+        if (!groupedDividends[key]) groupedDividends[key] = [];
+        groupedDividends[key].push(d);
+      });
+      
+      var dividendListHtml = '';
+      if (state.dividends.length === 0) {
+        dividendListHtml = '<div class="text-center py-12">' +
+          '<div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full flex items-center justify-center">' +
+            '<span class="text-3xl">💸</span>' +
+          '</div>' +
+          '<p class="text-gray-500 font-medium">아직 배당 내역이 없습니다</p>' +
+          '<p class="text-gray-400 text-sm mt-1">배당금을 받으면 기록해보세요!</p>' +
+        '</div>';
+      } else if (filteredDividends.length === 0) {
+        dividendListHtml = '<div class="text-center py-8">' +
+          '<div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center">' +
+            '<i data-lucide="search-x" class="w-6 h-6 text-gray-400"></i>' +
+          '</div>' +
+          '<p class="text-gray-500">"' + dividendSearchKeyword + '" 검색 결과가 없습니다</p>' +
+        '</div>';
+      } else {
+        if (dividendPeriod === 'all') {
+          var sortedDividends = filteredDividends.slice().sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
+          dividendListHtml = '<div class="space-y-2">' +
+            sortedDividends.map(function(d, idx) {
+              return '<div class="bg-white rounded-xl p-3 shadow-sm border border-green-100 hover:shadow-md hover:border-green-200 transition-all duration-200">' +
+                '<div class="flex items-center justify-between">' +
+                  '<div class="flex items-center gap-3">' +
+                    '<div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-500 rounded-lg flex items-center justify-center shadow-sm">' +
+                      '<span class="text-white font-bold text-sm">' + (d.stockName.charAt(0)) + '</span>' +
+                    '</div>' +
+                    '<div>' +
+                      '<div class="font-semibold text-gray-800">' + d.stockName + '</div>' +
+                      '<div class="text-xs text-gray-400 flex items-center gap-1">' +
+                        '<i data-lucide="calendar" class="w-3 h-3"></i>' + d.date +
+                      '</div>' +
+                    '</div>' +
+                  '</div>' +
+                  '<div class="flex items-center gap-3">' +
+                    '<div class="text-right">' +
+                      '<div class="font-bold text-green-600 text-lg">+' + formatNumber(d.amount) + '</div>' +
+                      '<div class="text-xs text-gray-400">원</div>' +
+                    '</div>' +
+                    '<button onclick="deleteDividend(' + d.id + ')" class="w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 transition-colors">' +
+                      '<i data-lucide="trash-2" class="w-4 h-4"></i>' +
+                    '</button>' +
+                  '</div>' +
+                '</div>' +
+              '</div>';
+            }).join('') +
+          '</div>';
+        } else {
+          dividendListHtml = '<div class="space-y-4">' +
+            Object.keys(groupedDividends).sort().reverse().map(function(period) {
+              var periodDividends = groupedDividends[period];
+              var periodTotal = periodDividends.reduce(function(s, d) { return s + d.amount; }, 0);
+              
+              return '<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-green-100">' +
+                '<div class="bg-gradient-to-r from-emerald-500 to-green-500 px-4 py-3 flex justify-between items-center">' +
+                  '<div class="flex items-center gap-2">' +
+                    '<i data-lucide="calendar-days" class="w-4 h-4 text-green-100"></i>' +
+                    '<span class="font-bold text-white">' + period + '</span>' +
+                  '</div>' +
+                  '<div class="bg-yellow-300 px-3 py-1.5 rounded-lg shadow-sm">' +
+                    '<span class="font-bold text-green-800">+' + formatNumber(periodTotal) + '원</span>' +
+                  '</div>' +
+                '</div>' +
+                '<div class="divide-y divide-gray-100">' +
+                  periodDividends.sort(function(a, b) { return new Date(b.date) - new Date(a.date); }).map(function(d) {
+                    return '<div class="flex items-center justify-between p-3 hover:bg-green-50 transition-colors">' +
+                      '<div class="flex items-center gap-3">' +
+                        '<div class="w-8 h-8 bg-gradient-to-br from-green-100 to-emerald-100 rounded-lg flex items-center justify-center">' +
+                          '<span class="text-green-600 font-semibold text-xs">' + (d.stockName.charAt(0)) + '</span>' +
+                        '</div>' +
+                        '<div>' +
+                          '<div class="font-medium text-gray-800 text-sm">' + d.stockName + '</div>' +
+                          '<div class="text-xs text-gray-400">' + d.date + '</div>' +
+                        '</div>' +
+                      '</div>' +
+                      '<div class="flex items-center gap-2">' +
+                        '<span class="font-bold text-green-600">+' + formatNumber(d.amount) + '원</span>' +
+                        '<button onclick="deleteDividend(' + d.id + ')" class="w-7 h-7 flex items-center justify-center rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 transition-colors">' +
+                          '<i data-lucide="trash-2" class="w-3.5 h-3.5"></i>' +
+                        '</button>' +
+                      '</div>' +
+                    '</div>';
+                  }).join('') +
+                '</div>' +
+              '</div>';
+            }).join('') +
+          '</div>';
+        }
+      }
+      
+      listContainer.innerHTML = dividendListHtml;
+      if (typeof lucide !== 'undefined') lucide.createIcons();
     }
     
     function renderInvestmentScreen() {
@@ -1420,11 +2568,34 @@
         return name.indexOf(keyword) >= 0 || typeLabel.indexOf(keyword) >= 0;
       });
 
+      // 투자 유형별 그라데이션 색상
+      var typeGradients = { 
+        stock: 'from-blue-500 to-indigo-600', 
+        etf: 'from-purple-500 to-pink-600', 
+        fund: 'from-emerald-500 to-teal-600', 
+        crypto: 'from-orange-500 to-amber-600', 
+        gold: 'from-yellow-500 to-orange-500', 
+        realestate: 'from-green-500 to-emerald-600', 
+        bond: 'from-gray-500 to-slate-600', 
+        other: 'from-indigo-500 to-purple-600' 
+      };
+      
       var investListHtml = '';
       if (state.investments.length === 0) {
-        investListHtml = '<div class="text-center text-gray-400 py-8">등록된 투자 종목이 없습니다</div>';
+        investListHtml = '<div class="text-center py-12">' +
+          '<div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full flex items-center justify-center">' +
+            '<span class="text-3xl">📊</span>' +
+          '</div>' +
+          '<p class="text-gray-500 font-medium">아직 등록된 투자 종목이 없습니다</p>' +
+          '<p class="text-gray-400 text-sm mt-1">종목을 추가해보세요!</p>' +
+        '</div>';
       } else if (filteredInvestments.length === 0) {
-        investListHtml = '<div class="text-center text-gray-400 py-8">"' + investmentSearchKeyword + '" 검색 결과가 없습니다</div>';
+        investListHtml = '<div class="text-center py-8">' +
+          '<div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center">' +
+            '<i data-lucide="search-x" class="w-6 h-6 text-gray-400"></i>' +
+          '</div>' +
+          '<p class="text-gray-500">"' + investmentSearchKeyword + '" 검색 결과가 없습니다</p>' +
+        '</div>';
       } else {
         investListHtml = filteredInvestments.map(function(inv) {
           var invested = inv.buyPrice * inv.quantity;
@@ -1433,29 +2604,60 @@
           var profitRate = invested > 0 ? ((profit / invested) * 100).toFixed(2) : 0;
           var icon = typeIcons[inv.type] || '📄';
           var label = typeLabels[inv.type] || '기타';
+          var gradient = typeGradients[inv.type] || 'from-indigo-500 to-purple-600';
           
-          return '<div class="border rounded-lg p-4 bg-gray-50">' +
-            '<div class="flex justify-between items-start mb-2">' +
-              '<div>' +
-                '<div class="flex items-center gap-2">' +
-                  '<span class="text-lg">' + icon + '</span>' +
-                  '<span class="font-bold">' + inv.name + '</span>' +
-                  '<span class="text-xs bg-gray-200 px-2 py-0.5 rounded">' + label + '</span>' +
+          return '<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300">' +
+            '<div class="bg-gradient-to-r ' + gradient + ' p-4">' +
+              '<div class="flex justify-between items-start">' +
+                '<div class="flex items-center gap-3">' +
+                  '<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-md">' +
+                    '<span class="text-2xl">' + icon + '</span>' +
+                  '</div>' +
+                  '<div>' +
+                    '<div class="font-bold text-white text-lg drop-shadow-sm">' + inv.name + '</div>' +
+                    '<div class="flex items-center gap-2 mt-1">' +
+                      '<span class="text-xs bg-white bg-opacity-30 text-white px-2 py-0.5 rounded-full font-medium">' + label + '</span>' +
+                      '<span class="text-white text-opacity-90 text-xs">' + (Number.isInteger(inv.quantity) ? inv.quantity : inv.quantity.toFixed(4)) + '주</span>' +
+                    '</div>' +
+                  '</div>' +
                 '</div>' +
-                '<div class="text-sm text-gray-500 mt-1">' + inv.quantity + '주 보유</div>' +
-              '</div>' +
-              '<div class="text-right">' +
-                '<div class="font-bold ' + (profit >= 0 ? 'text-red-600' : 'text-blue-600') + '">' + (profit >= 0 ? '+' : '') + formatNumber(profit) + '원</div>' +
-                '<div class="text-sm ' + (profit >= 0 ? 'text-red-500' : 'text-blue-500') + '">' + (profit >= 0 ? '+' : '') + profitRate + '%</div>' +
+                '<div class="text-right bg-white px-3 py-2 rounded-xl shadow-md">' +
+                  '<div class="font-bold ' + (profit >= 0 ? 'text-red-600' : 'text-blue-600') + ' text-lg">' + (profit >= 0 ? '+' : '') + formatNumber(profit) + '</div>' +
+                  '<div class="text-xs ' + (profit >= 0 ? 'text-red-500' : 'text-blue-500') + ' font-semibold">' + (profit >= 0 ? '▲' : '▼') + ' ' + Math.abs(profitRate) + '%</div>' +
+                '</div>' +
               '</div>' +
             '</div>' +
-            '<div class="grid grid-cols-2 gap-2 text-sm mb-3">' +
-              '<div class="bg-white p-2 rounded"><div class="text-xs text-gray-500">매입가</div><div class="font-medium">' + formatNumber(inv.buyPrice) + '원</div></div>' +
-              '<div class="bg-white p-2 rounded"><div class="text-xs text-gray-500">현재가</div><div class="font-medium">' + formatNumber(inv.currentPrice) + '원</div></div>' +
-            '</div>' +
-            '<div class="flex gap-2 mt-3 pt-3 border-t">' +
-              '<button onclick="editInvestmentPrice(' + inv.id + ')" class="flex-1 text-blue-500 text-sm py-1 hover:bg-blue-50 rounded">현재가 수정</button>' +
-              '<button onclick="deleteInvestment(' + inv.id + ')" class="flex-1 text-red-500 text-sm py-1 hover:bg-red-50 rounded">삭제</button>' +
+            '<div class="p-4">' +
+              '<div class="grid grid-cols-2 gap-3 mb-3">' +
+                '<div class="bg-gray-50 p-3 rounded-xl border border-gray-100">' +
+                  '<div class="text-xs text-gray-500 font-medium mb-1">📊 매입가 (1주)</div>' +
+                  '<div class="font-bold text-gray-800">' + formatNumber(inv.buyPrice) + '원</div>' +
+                '</div>' +
+                '<div class="bg-gray-50 p-3 rounded-xl border border-gray-100">' +
+                  '<div class="text-xs text-gray-500 font-medium mb-1">💹 현재가 (1주)</div>' +
+                  '<div class="font-bold text-gray-800">' + formatNumber(inv.currentPrice) + '원</div>' +
+                '</div>' +
+              '</div>' +
+              '<div class="grid grid-cols-2 gap-3 mb-4">' +
+                '<div class="bg-gradient-to-br from-indigo-50 to-blue-50 p-3 rounded-xl border border-indigo-200">' +
+                  '<div class="text-xs text-indigo-600 font-semibold mb-1">💰 총매입가</div>' +
+                  '<div class="font-bold text-indigo-700 text-lg">' + formatNumber(invested) + '원</div>' +
+                '</div>' +
+                '<div class="bg-gradient-to-br from-purple-50 to-pink-50 p-3 rounded-xl border border-purple-200">' +
+                  '<div class="text-xs text-purple-600 font-semibold mb-1">💎 총현재가</div>' +
+                  '<div class="font-bold text-purple-700 text-lg">' + formatNumber(current) + '원</div>' +
+                '</div>' +
+              '</div>' +
+              '<div class="flex gap-2">' +
+                '<button onclick="editInvestmentPrice(' + inv.id + ')" class="flex-1 bg-gradient-to-r from-blue-500 to-indigo-500 text-white py-2.5 rounded-xl font-medium text-sm hover:shadow-md transition-all duration-200 flex items-center justify-center gap-2">' +
+                  '<i data-lucide="edit-3" class="w-4 h-4"></i>' +
+                  '<span>현재가 수정</span>' +
+                '</button>' +
+                '<button onclick="deleteInvestment(' + inv.id + ')" class="flex-1 bg-gray-100 text-gray-600 py-2.5 rounded-xl font-medium text-sm hover:bg-red-50 hover:text-red-600 transition-all duration-200 flex items-center justify-center gap-2">' +
+                  '<i data-lucide="trash-2" class="w-4 h-4"></i>' +
+                  '<span>삭제</span>' +
+                '</button>' +
+              '</div>' +
             '</div>' +
           '</div>';
         }).join('');
@@ -1492,56 +2694,91 @@
       
       var dividendListHtml = '';
       if (state.dividends.length === 0) {
-        dividendListHtml = '<div class="text-center text-gray-400 py-4">배당 내역이 없습니다</div>';
+        dividendListHtml = '<div class="text-center py-12">' +
+          '<div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full flex items-center justify-center">' +
+            '<span class="text-3xl">💸</span>' +
+          '</div>' +
+          '<p class="text-gray-500 font-medium">아직 배당 내역이 없습니다</p>' +
+          '<p class="text-gray-400 text-sm mt-1">배당금을 받으면 기록해보세요!</p>' +
+        '</div>';
       } else if (filteredDividends.length === 0) {
-        dividendListHtml = '<div class="text-center text-gray-400 py-4">"' + dividendSearchKeyword + '" 검색 결과가 없습니다</div>';
+        dividendListHtml = '<div class="text-center py-8">' +
+          '<div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center">' +
+            '<i data-lucide="search-x" class="w-6 h-6 text-gray-400"></i>' +
+          '</div>' +
+          '<p class="text-gray-500">"' + dividendSearchKeyword + '" 검색 결과가 없습니다</p>' +
+        '</div>';
       } else {
         if (dividendPeriod === 'all') {
           var sortedDividends = filteredDividends.slice().sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
-          dividendListHtml = '<table class="w-full text-sm">' +
-            '<thead class="bg-gray-50">' +
-              '<tr>' +
-                '<th class="text-left py-2 px-2 font-medium text-gray-600">종목명</th>' +
-                '<th class="text-left py-2 px-2 font-medium text-gray-600">날짜</th>' +
-                '<th class="text-right py-2 px-2 font-medium text-gray-600">배당금</th>' +
-                '<th class="text-center py-2 px-1 font-medium text-gray-600"></th>' +
-              '</tr>' +
-            '</thead>' +
-            '<tbody>' +
-            sortedDividends.map(function(d) {
-              return '<tr class="border-b last:border-b-0">' +
-                '<td class="py-2 px-2 font-medium">' + d.stockName + '</td>' +
-                '<td class="py-2 px-2 text-gray-500">' + d.date + '</td>' +
-                '<td class="py-2 px-2 text-right font-bold text-green-600">+' + formatNumber(d.amount) + '원</td>' +
-                '<td class="py-2 px-1 text-center"><button onclick="deleteDividend(' + d.id + ')" class="text-red-400 hover:text-red-600 text-xs">삭제</button></td>' +
-              '</tr>';
+          dividendListHtml = '<div class="space-y-2">' +
+            sortedDividends.map(function(d, idx) {
+              return '<div class="bg-white rounded-xl p-3 shadow-sm border border-green-100 hover:shadow-md hover:border-green-200 transition-all duration-200">' +
+                '<div class="flex items-center justify-between">' +
+                  '<div class="flex items-center gap-3">' +
+                    '<div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-500 rounded-lg flex items-center justify-center shadow-sm">' +
+                      '<span class="text-white font-bold text-sm">' + (d.stockName.charAt(0)) + '</span>' +
+                    '</div>' +
+                    '<div>' +
+                      '<div class="font-semibold text-gray-800">' + d.stockName + '</div>' +
+                      '<div class="text-xs text-gray-400 flex items-center gap-1">' +
+                        '<i data-lucide="calendar" class="w-3 h-3"></i>' + d.date +
+                      '</div>' +
+                    '</div>' +
+                  '</div>' +
+                  '<div class="flex items-center gap-3">' +
+                    '<div class="text-right">' +
+                      '<div class="font-bold text-green-600 text-lg">+' + formatNumber(d.amount) + '</div>' +
+                      '<div class="text-xs text-gray-400">원</div>' +
+                    '</div>' +
+                    '<button onclick="deleteDividend(' + d.id + ')" class="w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 transition-colors">' +
+                      '<i data-lucide="trash-2" class="w-4 h-4"></i>' +
+                    '</button>' +
+                  '</div>' +
+                '</div>' +
+              '</div>';
             }).join('') +
-            '</tbody>' +
-          '</table>';
+          '</div>';
         } else {
-          dividendListHtml = Object.keys(groupedDividends).sort().reverse().map(function(period) {
-            var periodDividends = groupedDividends[period];
-            var periodTotal = periodDividends.reduce(function(s, d) { return s + d.amount; }, 0);
-            
-            return '<div class="mb-4 border rounded-lg overflow-hidden">' +
-              '<div class="bg-green-50 px-3 py-2 flex justify-between items-center">' +
-                '<span class="font-bold text-green-800">' + period + '</span>' +
-                '<span class="font-bold text-green-600">+' + formatNumber(periodTotal) + '원</span>' +
-              '</div>' +
-              '<table class="w-full text-sm">' +
-                '<tbody>' +
-                periodDividends.sort(function(a, b) { return new Date(b.date) - new Date(a.date); }).map(function(d) {
-                  return '<tr class="border-b last:border-b-0">' +
-                    '<td class="py-2 px-3 font-medium">' + d.stockName + '</td>' +
-                    '<td class="py-2 px-2 text-gray-500 text-xs">' + d.date + '</td>' +
-                    '<td class="py-2 px-2 text-right font-bold text-green-600">+' + formatNumber(d.amount) + '원</td>' +
-                    '<td class="py-2 px-1 text-center"><button onclick="deleteDividend(' + d.id + ')" class="text-red-400 hover:text-red-600 text-xs">삭제</button></td>' +
-                  '</tr>';
-                }).join('') +
-                '</tbody>' +
-              '</table>' +
-            '</div>';
-          }).join('');
+          dividendListHtml = '<div class="space-y-4">' +
+            Object.keys(groupedDividends).sort().reverse().map(function(period) {
+              var periodDividends = groupedDividends[period];
+              var periodTotal = periodDividends.reduce(function(s, d) { return s + d.amount; }, 0);
+              
+              return '<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-green-100">' +
+                '<div class="bg-gradient-to-r from-emerald-500 to-green-500 px-4 py-3 flex justify-between items-center">' +
+                  '<div class="flex items-center gap-2">' +
+                    '<i data-lucide="calendar-days" class="w-4 h-4 text-green-100"></i>' +
+                    '<span class="font-bold text-white">' + period + '</span>' +
+                  '</div>' +
+                  '<div class="bg-yellow-300 px-3 py-1.5 rounded-lg shadow-sm">' +
+                    '<span class="font-bold text-green-800">+' + formatNumber(periodTotal) + '원</span>' +
+                  '</div>' +
+                '</div>' +
+                '<div class="divide-y divide-gray-100">' +
+                  periodDividends.sort(function(a, b) { return new Date(b.date) - new Date(a.date); }).map(function(d) {
+                    return '<div class="flex items-center justify-between p-3 hover:bg-green-50 transition-colors">' +
+                      '<div class="flex items-center gap-3">' +
+                        '<div class="w-8 h-8 bg-gradient-to-br from-green-100 to-emerald-100 rounded-lg flex items-center justify-center">' +
+                          '<span class="text-green-600 font-semibold text-xs">' + (d.stockName.charAt(0)) + '</span>' +
+                        '</div>' +
+                        '<div>' +
+                          '<div class="font-medium text-gray-800 text-sm">' + d.stockName + '</div>' +
+                          '<div class="text-xs text-gray-400">' + d.date + '</div>' +
+                        '</div>' +
+                      '</div>' +
+                      '<div class="flex items-center gap-2">' +
+                        '<span class="font-bold text-green-600">+' + formatNumber(d.amount) + '원</span>' +
+                        '<button onclick="deleteDividend(' + d.id + ')" class="w-7 h-7 flex items-center justify-center rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 transition-colors">' +
+                          '<i data-lucide="trash-2" class="w-3.5 h-3.5"></i>' +
+                        '</button>' +
+                      '</div>' +
+                    '</div>';
+                  }).join('') +
+                '</div>' +
+              '</div>';
+            }).join('') +
+          '</div>';
         }
       }
 
@@ -1580,45 +2817,99 @@
             '</div>' +
           '</div>' +
         '</div>' +
-        '<div class="bg-white rounded-xl shadow-lg p-4">' +
-          '<div class="flex justify-between items-center mb-3">' +
-            '<h3 class="font-bold">📈 내 포트폴리오</h3>' +
-            '<button onclick="state.showAddInvestment=true;render()" class="bg-indigo-500 text-white px-3 py-1 rounded-lg text-sm">+ 종목 추가</button>' +
-          '</div>' +
-          '<div class="mb-3">' +
-            '<div class="relative">' +
-              '<input type="text" id="investmentSearch" value="' + investmentSearchKeyword + '" oninput="updateInvestmentSearch(this.value)" class="w-full p-2 pl-9 border rounded-lg text-sm" placeholder="종목명 또는 유형으로 검색...">' +
-              '<i data-lucide="search" class="w-4 h-4 absolute left-3 top-2.5 text-gray-400"></i>' +
-            '</div>' +
-            (state.investments.length > 0 ? '<div class="text-xs text-gray-500 mt-1">총 ' + state.investments.length + '개 종목 중 ' + filteredInvestments.length + '개 표시</div>' : '') +
-          '</div>' +
-          '<div class="space-y-3">' + investListHtml + '</div>' +
-        '</div>' +
-        '<div class="bg-white rounded-xl shadow-lg p-4">' +
-          '<div class="flex justify-between items-center mb-3">' +
-            '<h3 class="font-bold">💰 배당 내역</h3>' +
-            '<div class="flex items-center gap-2">' +
-              '<div class="bg-green-100 px-3 py-1 rounded-lg">' +
-                '<span class="text-xs text-green-600">총 배당: </span>' +
-                '<span class="font-bold text-green-700">' + formatNumber(totalDividends) + '원</span>' +
+        // 내 포트폴리오 섹션 - 멋진 UI
+        '<div class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl shadow-lg overflow-hidden border border-indigo-100">' +
+          // 포트폴리오 헤더
+          '<div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4">' +
+            '<div class="flex justify-between items-center">' +
+              '<div class="flex items-center gap-3">' +
+                '<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-md">' +
+                  '<span class="text-2xl">📈</span>' +
+                '</div>' +
+                '<div>' +
+                  '<h3 class="font-bold text-white text-lg drop-shadow-sm">내 포트폴리오</h3>' +
+                  '<p class="text-indigo-100 text-xs">My Portfolio</p>' +
+                '</div>' +
               '</div>' +
-              '<button onclick="state.showAddDividend=true;render()" class="bg-green-500 text-white px-3 py-1 rounded-lg text-sm font-medium">+ 배당추가</button>' +
+              '<button onclick="state.showAddInvestment=true;render()" class="bg-white text-indigo-600 px-4 py-2 rounded-xl text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2">' +
+                '<i data-lucide="plus-circle" class="w-4 h-4"></i>' +
+                '<span>종목 추가</span>' +
+              '</button>' +
             '</div>' +
           '</div>' +
-          '<div class="mb-3">' +
-            '<div class="flex gap-1 mb-2 overflow-x-auto pb-1">' +
-              '<button onclick="setDividendPeriod(\'all\')" class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap ' + (dividendPeriod === 'all' ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-700') + '">전체</button>' +
-              '<button onclick="setDividendPeriod(\'weekly\')" class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap ' + (dividendPeriod === 'weekly' ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-700') + '">주별</button>' +
-              '<button onclick="setDividendPeriod(\'monthly\')" class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap ' + (dividendPeriod === 'monthly' ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-700') + '">월별</button>' +
-              '<button onclick="setDividendPeriod(\'yearly\')" class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap ' + (dividendPeriod === 'yearly' ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-700') + '">년도별</button>' +
+          // 검색 및 필터 영역
+          '<div class="p-4">' +
+            '<div class="bg-white rounded-xl p-3 shadow-sm border border-indigo-100 mb-4">' +
+              '<div class="relative">' +
+                '<input type="text" id="investmentSearch" value="' + investmentSearchKeyword + '" ' +
+                  'oncompositionstart="isComposingInvestment=true" ' +
+                  'oncompositionend="isComposingInvestment=false;updateInvestmentSearch(this.value)" ' +
+                  'oninput="if(!isComposingInvestment)updateInvestmentSearch(this.value)" ' +
+                  'class="w-full py-2.5 pl-10 pr-4 bg-gray-50 border-2 border-transparent rounded-xl text-sm font-medium placeholder-gray-400 focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100 transition-all" placeholder="🔍 종목명 또는 유형으로 검색...">' +
+                '<i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 transform -translate-y-1/2 text-indigo-500"></i>' +
+              '</div>' +
+              '<div id="investment-count" class="text-xs text-gray-500 mt-2 flex items-center gap-1">' +
+                (state.investments.length > 0 ? '<i data-lucide="briefcase" class="w-3 h-3"></i> 총 ' + state.investments.length + '개 종목 중 <span class="font-semibold text-indigo-600">' + filteredInvestments.length + '개</span> 표시' : '') +
+              '</div>' +
             '</div>' +
-            '<div class="relative">' +
-              '<input type="text" id="dividendSearch" value="' + dividendSearchKeyword + '" oninput="updateDividendSearch(this.value)" class="w-full p-2 pl-9 border rounded-lg text-sm" placeholder="종목명으로 검색...">' +
-              '<i data-lucide="search" class="w-4 h-4 absolute left-3 top-2.5 text-gray-400"></i>' +
-            '</div>' +
-            (state.dividends.length > 0 ? '<div class="text-xs text-gray-500 mt-1">총 ' + state.dividends.length + '건 중 ' + filteredDividends.length + '건 표시</div>' : '') +
+            '<div id="investment-list-container" class="space-y-3">' + investListHtml + '</div>' +
           '</div>' +
-          '<div class="overflow-x-auto max-h-80 overflow-y-auto">' + dividendListHtml + '</div>' +
+        '</div>' +
+        // 배당 내역 섹션 - 멋진 UI
+        '<div class="bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50 rounded-2xl shadow-lg overflow-hidden border border-green-100">' +
+          // 헤더 영역
+          '<div class="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 p-4">' +
+            '<div class="flex justify-between items-center">' +
+              '<div class="flex items-center gap-3">' +
+                '<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-md">' +
+                  '<span class="text-2xl">💰</span>' +
+                '</div>' +
+                '<div>' +
+                  '<h3 class="font-bold text-white text-lg drop-shadow-sm">배당 내역</h3>' +
+                  '<p class="text-green-100 text-xs">Dividend History</p>' +
+                '</div>' +
+              '</div>' +
+              '<div class="text-right">' +
+                '<div class="bg-white px-4 py-2 rounded-xl shadow-md">' +
+                  '<div class="text-green-600 text-xs font-medium">총 배당금</div>' +
+                  '<div class="font-bold text-green-700 text-lg">' + formatNumber(totalDividends) + '원</div>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+          // 컨트롤 영역
+          '<div class="p-4">' +
+            '<div class="flex flex-wrap items-center justify-between gap-3 mb-4">' +
+              // 기간 필터 버튼들
+              '<div class="flex gap-1.5 overflow-x-auto pb-1">' +
+                '<button onclick="setDividendPeriod(\'all\')" data-period="all" class="dividend-period-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-200 ' + (dividendPeriod === 'all' ? 'bg-gradient-to-r from-emerald-500 to-green-500 text-white shadow-md' : 'bg-white text-gray-600 hover:bg-green-50 border border-gray-200') + '">📋 전체</button>' +
+                '<button onclick="setDividendPeriod(\'weekly\')" data-period="weekly" class="dividend-period-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-200 ' + (dividendPeriod === 'weekly' ? 'bg-gradient-to-r from-emerald-500 to-green-500 text-white shadow-md' : 'bg-white text-gray-600 hover:bg-green-50 border border-gray-200') + '">📅 주별</button>' +
+                '<button onclick="setDividendPeriod(\'monthly\')" data-period="monthly" class="dividend-period-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-200 ' + (dividendPeriod === 'monthly' ? 'bg-gradient-to-r from-emerald-500 to-green-500 text-white shadow-md' : 'bg-white text-gray-600 hover:bg-green-50 border border-gray-200') + '">🗓️ 월별</button>' +
+                '<button onclick="setDividendPeriod(\'yearly\')" data-period="yearly" class="dividend-period-btn px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-200 ' + (dividendPeriod === 'yearly' ? 'bg-gradient-to-r from-emerald-500 to-green-500 text-white shadow-md' : 'bg-white text-gray-600 hover:bg-green-50 border border-gray-200') + '">📊 년도별</button>' +
+              '</div>' +
+              // 배당 추가 버튼
+              '<button onclick="state.showAddDividend=true;render()" class="bg-gradient-to-r from-emerald-500 to-green-600 text-white px-4 py-2 rounded-xl text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2">' +
+                '<i data-lucide="plus-circle" class="w-4 h-4"></i>' +
+                '<span>배당 추가</span>' +
+              '</button>' +
+            '</div>' +
+            // 검색 영역
+            '<div class="bg-white rounded-xl p-3 shadow-sm border border-green-100 mb-4">' +
+              '<div class="relative">' +
+                '<input type="text" id="dividendSearch" value="' + dividendSearchKeyword + '" ' +
+                  'oncompositionstart="isComposingDividend=true" ' +
+                  'oncompositionend="isComposingDividend=false;updateDividendSearch(this.value)" ' +
+                  'oninput="if(!isComposingDividend)updateDividendSearch(this.value)" ' +
+                  'class="w-full py-2.5 pl-10 pr-4 bg-gray-50 border-2 border-transparent rounded-xl text-sm font-medium placeholder-gray-400 focus:border-green-400 focus:bg-white focus:ring-2 focus:ring-green-100 transition-all" placeholder="🔍 종목명으로 검색...">' +
+                '<i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 transform -translate-y-1/2 text-green-500"></i>' +
+              '</div>' +
+              '<div id="dividend-count" class="text-xs text-gray-500 mt-2 flex items-center gap-1">' +
+                (state.dividends.length > 0 ? '<i data-lucide="list" class="w-3 h-3"></i> 총 ' + state.dividends.length + '건 중 <span class="font-semibold text-green-600">' + filteredDividends.length + '건</span> 표시' : '') +
+              '</div>' +
+            '</div>' +
+            // 배당 리스트
+            '<div id="dividend-list-container" class="max-h-96 overflow-y-auto rounded-xl">' + dividendListHtml + '</div>' +
+          '</div>' +
         '</div>' +
         '<div class="bg-white rounded-xl shadow-lg p-4">' +
           '<div class="flex justify-between items-center mb-4">' +
@@ -1633,9 +2924,9 @@
     function addInvestment() {
       var name = document.getElementById('invName') ? document.getElementById('invName').value : '';
       var type = document.getElementById('invType') ? document.getElementById('invType').value : 'stock';
-      var quantity = Number(document.getElementById('invQuantity') ? document.getElementById('invQuantity').value : 0);
-      var buyPrice = Number(document.getElementById('invBuyPrice') ? document.getElementById('invBuyPrice').value : 0);
-      var currentPrice = Number(document.getElementById('invCurrentPrice') ? document.getElementById('invCurrentPrice').value : 0) || buyPrice;
+      var quantity = getQuantityValue('invQuantity');
+      var buyPrice = getAmountValue('invBuyPrice');
+      var currentPrice = getAmountValue('invCurrentPrice') || buyPrice;
 
       if (!name || !quantity || !buyPrice) {
         alert('종목명, 수량, 매입가를 입력해주세요');
@@ -1672,11 +2963,10 @@
     // Dividend functions
     function addDividend() {
       var stockNameEl = document.getElementById('divStockName');
-      var amountEl = document.getElementById('divAmount');
       var dateEl = document.getElementById('divDate');
       
       var stockName = stockNameEl ? stockNameEl.value.trim() : '';
-      var amount = Number(amountEl ? amountEl.value : 0);
+      var amount = getAmountValue('divAmount');
       var date = dateEl ? dateEl.value : '';
 
       if (!stockName) {
@@ -1743,6 +3033,353 @@
         render();
         showToast('투자일지가 삭제되었습니다');
       }
+    }
+
+    // Loan management functions
+    function addLoan() {
+      var nameEl = document.getElementById('loanName');
+      var amountEl = document.getElementById('loanAmount');
+      var loanDateEl = document.getElementById('loanDate');
+      var repayDateEl = document.getElementById('loanRepayDate');
+      var rateEl = document.getElementById('loanRate');
+      var rateTypeEl = document.getElementById('loanRateType');
+      var monthlyEl = document.getElementById('loanMonthlyPayment');
+      var payDayEl = document.getElementById('loanPayDay');
+      var lenderTypeEl = document.getElementById('loanLenderType');
+
+      var name = nameEl ? nameEl.value.trim() : '';
+      var amount = Number(amountEl ? amountEl.value : 0);
+      var loanDate = loanDateEl ? loanDateEl.value : '';
+      var repayDate = repayDateEl ? repayDateEl.value : '';
+      var rate = Number(rateEl ? rateEl.value : 0);
+      var rateType = rateTypeEl ? rateTypeEl.value : 'fixed';
+      var monthly = Number(monthlyEl ? monthlyEl.value : 0);
+      var payDay = Number(payDayEl ? payDayEl.value : 1);
+      var lenderType = lenderTypeEl ? lenderTypeEl.value : 'bank';
+
+      if (!name) { alert('대출명을 입력해주세요'); return; }
+      if (!amount || amount <= 0) { alert('대출금을 입력해주세요'); return; }
+      if (!loanDate) { alert('대출날짜를 선택해주세요'); return; }
+
+      state.loans.push({
+        id: Date.now(),
+        name: name,
+        amount: amount,
+        loanDate: loanDate,
+        repayDate: repayDate,
+        rate: rate,
+        rateType: rateType,
+        monthlyPayment: monthly,
+        payDay: payDay,
+        lenderType: lenderType
+      });
+
+      saveData();
+      render();
+      showToast('대출이 추가되었습니다');
+    }
+
+    function deleteLoan(id) {
+      if (confirm('대출 항목을 삭제하시겠습니까?')) {
+        state.loans = state.loans.filter(function(l) { return l.id !== id; });
+        saveData();
+        render();
+        showToast('대출이 삭제되었습니다');
+      }
+    }
+
+    function editLoan(id) {
+      var loan = state.loans.find(function(l) { return l.id === id; });
+      if (!loan) return;
+
+      var newAmountStr = prompt('대출 잔액:', loan.amount.toLocaleString());
+      if (newAmountStr === null) return;
+      
+      var newMonthlyStr = prompt('월 상환금:', loan.monthlyPayment.toLocaleString());
+      if (newMonthlyStr === null) return;
+
+      var newAmount = parseInt(newAmountStr.replace(/[^\d]/g, ''), 10);
+      var newMonthly = parseInt(newMonthlyStr.replace(/[^\d]/g, ''), 10);
+
+      loan.amount = isNaN(newAmount) ? loan.amount : newAmount;
+      loan.monthlyPayment = isNaN(newMonthly) ? loan.monthlyPayment : newMonthly;
+
+      saveData();
+      render();
+      showToast('대출 정보가 수정되었습니다');
+    }
+
+    function calculateLoanInterest(amount, rate, months) {
+      if (months <= 0) return 0;
+      return amount * (rate / 100) * (months / 12);
+    }
+
+    // Manual trigger for auto loan repayments
+    function triggerAutoLoanRepayments() {
+      var addedCount = 0;
+      var today = new Date();
+      var currentYear = today.getFullYear();
+      var currentMonth = today.getMonth();
+      
+      state.loans.forEach(function(loan) {
+        if (!loan.monthlyPayment || loan.monthlyPayment <= 0) return;
+        if (!loan.payDay) return;
+        
+        if (loan.repayDate) {
+          var repayEnd = new Date(loan.repayDate);
+          if (today > repayEnd) return;
+        }
+        
+        if (loan.loanDate) {
+          var loanStart = new Date(loan.loanDate);
+          if (today < loanStart) return;
+        }
+        
+        var repaymentDate = new Date(currentYear, currentMonth, loan.payDay);
+        var dateString = repaymentDate.toISOString().split('T')[0];
+        
+        var existingTransaction = state.transactions.find(function(t) {
+          return t.type === 'expense' && 
+                 t.category === '대출상환' && 
+                 t.date === dateString && 
+                 t.memo && t.memo.indexOf(loan.name) >= 0;
+        });
+        
+        if (!existingTransaction) {
+          var newTransaction = {
+            id: Date.now() + Math.random(),
+            type: 'expense',
+            date: dateString,
+            amount: loan.monthlyPayment,
+            category: '대출상환',
+            memo: loan.name + ' 월상환금 (자동)',
+            paymentMethod: 'cash',
+            installment: 0,
+            isNecessary: true
+          };
+          state.transactions.push(newTransaction);
+          addedCount++;
+        }
+      });
+      
+      if (addedCount > 0) {
+        saveData();
+        showToast(addedCount + '건의 대출상환이 자동 등록되었습니다');
+        render();
+      } else {
+        showToast('이번 달 등록할 대출상환이 없습니다');
+      }
+    }
+
+    function renderLoanSection() {
+      var totalLoan = state.loans.reduce(function(s, l) { return s + l.amount; }, 0);
+      var totalMonthlyPayment = state.loans.reduce(function(s, l) { return s + l.monthlyPayment; }, 0);
+      
+      var lenderTypeLabels = { bank: '🏦 은행', card: '💳 카드', insurance: '🛡️ 보험', other: '📄 기타' };
+      var lenderTypeColors = { bank: 'bg-blue-100 text-blue-700', card: 'bg-purple-100 text-purple-700', insurance: 'bg-green-100 text-green-700', other: 'bg-gray-100 text-gray-700' };
+      
+      var loanListHtml = '';
+      if (state.loans.length === 0) {
+        loanListHtml = '<div class="text-center text-gray-400 py-4">등록된 대출이 없습니다</div>';
+      } else {
+        loanListHtml = state.loans.map(function(loan) {
+          var lenderLabel = lenderTypeLabels[loan.lenderType] || '📄 기타';
+          var lenderColor = lenderTypeColors[loan.lenderType] || 'bg-gray-100 text-gray-700';
+          var rateTypeLabel = loan.rateType === 'fixed' ? '고정' : '변동';
+          var rateTypeColor = loan.rateType === 'fixed' ? 'bg-blue-50 text-blue-600' : 'bg-orange-50 text-orange-600';
+          
+          // Calculate remaining months
+          var remainingMonths = 0;
+          var progress = 0;
+          if (loan.repayDate && loan.loanDate) {
+            var loanStart = new Date(loan.loanDate);
+            var repayEnd = new Date(loan.repayDate);
+            var now = new Date();
+            var totalMonths = Math.ceil((repayEnd - loanStart) / (1000 * 60 * 60 * 24 * 30));
+            var elapsedMonths = Math.ceil((now - loanStart) / (1000 * 60 * 60 * 24 * 30));
+            remainingMonths = Math.max(0, totalMonths - elapsedMonths);
+            progress = totalMonths > 0 ? Math.min((elapsedMonths / totalMonths) * 100, 100) : 0;
+          }
+          
+          return '<div class="border rounded-xl p-4 bg-gradient-to-r from-red-50 to-orange-50 mb-3">' +
+            '<div class="flex justify-between items-start mb-3">' +
+              '<div class="flex-1">' +
+                '<div class="flex items-center gap-2 mb-1">' +
+                  '<span class="font-bold text-gray-800">' + loan.name + '</span>' +
+                  '<span class="text-xs px-2 py-0.5 rounded ' + lenderColor + '">' + lenderLabel + '</span>' +
+                '</div>' +
+                '<div class="text-xs text-gray-500">대출일: ' + loan.loanDate + (loan.repayDate ? ' ~ ' + loan.repayDate : '') + '</div>' +
+              '</div>' +
+              '<div class="flex gap-1">' +
+                '<button onclick="editLoan(' + loan.id + ')" class="text-blue-500 text-xs px-2 py-1 hover:bg-blue-50 rounded">수정</button>' +
+                '<button onclick="deleteLoan(' + loan.id + ')" class="text-red-500 text-xs px-2 py-1 hover:bg-red-50 rounded">삭제</button>' +
+              '</div>' +
+            '</div>' +
+            '<div class="grid grid-cols-2 gap-2 mb-3">' +
+              '<div class="bg-white p-2 rounded-lg">' +
+                '<div class="text-xs text-gray-500">대출 잔액</div>' +
+                '<div class="font-bold text-red-600">' + formatNumber(loan.amount) + '원</div>' +
+              '</div>' +
+              '<div class="bg-white p-2 rounded-lg">' +
+                '<div class="text-xs text-gray-500">월 상환금</div>' +
+                '<div class="font-bold text-orange-600">' + formatNumber(loan.monthlyPayment) + '원</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="grid grid-cols-3 gap-2 mb-3">' +
+              '<div class="bg-white p-2 rounded-lg text-center">' +
+                '<div class="text-xs text-gray-500">연이율</div>' +
+                '<div class="font-bold text-sm text-purple-600">' + loan.rate + '%</div>' +
+                '<span class="text-xs px-1 rounded ' + rateTypeColor + '">' + rateTypeLabel + '</span>' +
+              '</div>' +
+              '<div class="bg-white p-2 rounded-lg text-center">' +
+                '<div class="text-xs text-gray-500">상환일</div>' +
+                '<div class="font-bold text-sm text-gray-700">매월 ' + loan.payDay + '일</div>' +
+              '</div>' +
+              '<div class="bg-white p-2 rounded-lg text-center">' +
+                '<div class="text-xs text-gray-500">남은 기간</div>' +
+                '<div class="font-bold text-sm text-blue-600">' + remainingMonths + '개월</div>' +
+              '</div>' +
+            '</div>' +
+            (loan.repayDate ? '<div class="mb-2">' +
+              '<div class="flex justify-between text-xs text-gray-600 mb-1">' +
+                '<span>상환 진행률</span>' +
+                '<span>' + progress.toFixed(1) + '%</span>' +
+              '</div>' +
+              '<div class="w-full bg-gray-200 rounded-full h-3">' +
+                '<div class="bg-gradient-to-r from-green-400 to-green-500 h-3 rounded-full transition-all" style="width: ' + progress + '%"></div>' +
+              '</div>' +
+            '</div>' : '') +
+          '</div>';
+        }).join('');
+      }
+      
+      // Check this month's repayment status
+      var today = new Date();
+      var currentYear = today.getFullYear();
+      var currentMonth = today.getMonth();
+      
+      var repaymentStatus = state.loans.map(function(loan) {
+        if (!loan.monthlyPayment || loan.monthlyPayment <= 0) return null;
+        
+        var repaymentDate = new Date(currentYear, currentMonth, loan.payDay || 1);
+        var dateString = repaymentDate.toISOString().split('T')[0];
+        
+        var existingTransaction = state.transactions.find(function(t) {
+          return t.type === 'expense' && 
+                 t.category === '대출상환' && 
+                 t.date === dateString && 
+                 t.memo && t.memo.indexOf(loan.name) >= 0;
+        });
+        
+        return {
+          loanId: loan.id,
+          loanName: loan.name,
+          isPaid: !!existingTransaction,
+          payDay: loan.payDay,
+          amount: loan.monthlyPayment
+        };
+      }).filter(function(s) { return s !== null; });
+      
+      var paidCount = repaymentStatus.filter(function(s) { return s.isPaid; }).length;
+      var totalCount = repaymentStatus.length;
+
+      return '<div class="bg-white rounded-xl shadow-lg p-4">' +
+        '<div class="flex justify-between items-center mb-4">' +
+          '<h3 class="font-bold flex items-center gap-2">💳 은행/카드/보험별 대출잔고</h3>' +
+          '<button onclick="triggerAutoLoanRepayments()" class="bg-blue-500 text-white px-3 py-1 rounded-lg text-xs font-medium hover:bg-blue-600 transition flex items-center gap-1">' +
+            '<i data-lucide="refresh-cw" class="w-3 h-3"></i> 자동상환 체크' +
+          '</button>' +
+        '</div>' +
+        '<div class="grid grid-cols-2 gap-3 mb-3">' +
+          '<div class="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">' +
+            '<div class="text-sm text-red-600 font-medium">총 대출 잔액</div>' +
+            '<div class="text-2xl font-bold text-red-700">' + formatNumber(totalLoan) + '원</div>' +
+          '</div>' +
+          '<div class="bg-gradient-to-r from-orange-100 to-orange-200 p-4 rounded-xl">' +
+            '<div class="text-sm text-orange-600 font-medium">월 총 상환금</div>' +
+            '<div class="text-2xl font-bold text-orange-700">' + formatNumber(totalMonthlyPayment) + '원</div>' +
+          '</div>' +
+        '</div>' +
+        (totalCount > 0 ? '<div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">' +
+          '<div class="flex justify-between items-center">' +
+            '<span class="text-sm font-medium text-blue-700">📅 이번 달 상환 현황</span>' +
+            '<span class="text-sm font-bold ' + (paidCount === totalCount ? 'text-green-600' : 'text-orange-600') + '">' + 
+              paidCount + '/' + totalCount + '건 완료' +
+            '</span>' +
+          '</div>' +
+          '<div class="mt-2 space-y-1">' +
+            repaymentStatus.map(function(s) {
+              return '<div class="flex justify-between items-center text-xs">' +
+                '<span class="text-gray-600">' + s.loanName + ' (매월 ' + s.payDay + '일)</span>' +
+                '<span class="' + (s.isPaid ? 'text-green-600 font-bold' : 'text-red-600') + '">' +
+                  (s.isPaid ? '✅ 상환완료' : '⏳ 대기중 (' + formatNumber(s.amount) + '원)') +
+                '</span>' +
+              '</div>';
+            }).join('') +
+          '</div>' +
+        '</div>' : '') +
+        '<div class="mb-4">' + loanListHtml + '</div>' +
+        '<div class="border-t pt-4">' +
+          '<h4 class="font-bold text-sm mb-3 text-gray-700">➕ 새 대출 추가</h4>' +
+          '<div class="space-y-2">' +
+            '<div class="grid grid-cols-2 gap-2">' +
+              '<div>' +
+                '<label class="block text-xs text-gray-600 mb-1">대출처 유형</label>' +
+                '<select id="loanLenderType" class="w-full p-2 border rounded-lg text-sm">' +
+                  '<option value="bank">🏦 은행</option>' +
+                  '<option value="card">💳 카드</option>' +
+                  '<option value="insurance">🛡️ 보험</option>' +
+                  '<option value="other">📄 기타</option>' +
+                '</select>' +
+              '</div>' +
+              '<div>' +
+                '<label class="block text-xs text-gray-600 mb-1">대출명</label>' +
+                '<input type="text" id="loanName" class="w-full p-2 border rounded-lg text-sm" placeholder="예: 주택담보대출">' +
+              '</div>' +
+            '</div>' +
+            '<div class="grid grid-cols-2 gap-2">' +
+              '<div>' +
+                '<label class="block text-xs text-gray-600 mb-1">대출금</label>' +
+                '<input type="number" id="loanAmount" class="w-full p-2 border rounded-lg text-sm" placeholder="0">' +
+              '</div>' +
+              '<div>' +
+                '<label class="block text-xs text-gray-600 mb-1">월 상환금</label>' +
+                '<input type="number" id="loanMonthlyPayment" class="w-full p-2 border rounded-lg text-sm" placeholder="0">' +
+              '</div>' +
+            '</div>' +
+            '<div class="grid grid-cols-2 gap-2">' +
+              '<div>' +
+                '<label class="block text-xs text-gray-600 mb-1">대출날짜</label>' +
+                '<input type="date" id="loanDate" class="w-full p-2 border rounded-lg text-sm">' +
+              '</div>' +
+              '<div>' +
+                '<label class="block text-xs text-gray-600 mb-1">상환완료 예정일</label>' +
+                '<input type="date" id="loanRepayDate" class="w-full p-2 border rounded-lg text-sm">' +
+              '</div>' +
+            '</div>' +
+            '<div class="grid grid-cols-3 gap-2">' +
+              '<div>' +
+                '<label class="block text-xs text-gray-600 mb-1">연이율 (%)</label>' +
+                '<input type="number" id="loanRate" step="0.01" class="w-full p-2 border rounded-lg text-sm" placeholder="0">' +
+              '</div>' +
+              '<div>' +
+                '<label class="block text-xs text-gray-600 mb-1">금리유형</label>' +
+                '<select id="loanRateType" class="w-full p-2 border rounded-lg text-sm">' +
+                  '<option value="fixed">고정금리</option>' +
+                  '<option value="variable">변동금리</option>' +
+                '</select>' +
+              '</div>' +
+              '<div>' +
+                '<label class="block text-xs text-gray-600 mb-1">상환일</label>' +
+                '<select id="loanPayDay" class="w-full p-2 border rounded-lg text-sm">' +
+                  Array.from({length: 28}, function(_, i) { return '<option value="' + (i + 1) + '">' + (i + 1) + '일</option>'; }).join('') +
+                '</select>' +
+              '</div>' +
+            '</div>' +
+            '<button onclick="addLoan()" class="w-full bg-gradient-to-r from-red-500 to-orange-500 text-white py-2 rounded-lg font-medium mt-2">대출 추가</button>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
     }
 
     // Exchange Screen
@@ -2228,11 +3865,38 @@
               '<button id="btn-income" onclick="setTxType(\'income\')" class="flex-1 py-2 rounded-lg bg-gray-200">수입</button>' +
             '</div>' +
             '<input type="hidden" id="txType" value="expense">' +
-            '<div><label class="block text-sm font-medium mb-1">날짜</label><input type="date" id="txDate" value="' + new Date().toISOString().split('T')[0] + '" class="w-full p-2 border rounded-lg"></div>' +
-            '<div><label class="block text-sm font-medium mb-1">금액</label><input type="number" id="txAmount" class="w-full p-2 border rounded-lg" placeholder="금액 입력"></div>' +
+            '<div id="fixed-expense-toggle" class="flex items-center gap-3 p-3 bg-purple-50 rounded-lg border border-purple-200">' +
+              '<input type="checkbox" id="isFixedExpense" onchange="toggleFixedExpenseMode()" class="w-5 h-5 text-purple-600">' +
+              '<label for="isFixedExpense" class="font-medium text-purple-700 cursor-pointer">📅 고정비 (매월 자동 입력)</label>' +
+            '</div>' +
+            '<div id="regular-expense-form">' +
+              '<div class="mb-4"><label class="block text-sm font-medium mb-1">날짜</label><input type="date" id="txDate" value="' + new Date().toISOString().split('T')[0] + '" class="w-full p-2 border rounded-lg"></div>' +
+              '<div class="mb-4"><label class="block text-sm font-medium mb-1">금액</label><input type="text" id="txAmount" class="w-full p-2 border rounded-lg" placeholder="금액 입력" oninput="formatAmountInput(this);updateInstallmentInfo()"></div>' +
+            '</div>' +
+            '<div id="fixed-expense-form" class="hidden space-y-3">' +
+              '<div class="grid grid-cols-2 gap-2">' +
+                '<div><label class="block text-sm font-medium mb-1">시작날짜</label><input type="date" id="feStartDate" value="' + new Date().toISOString().split('T')[0] + '" class="w-full p-2 border rounded-lg"></div>' +
+                '<div><label class="block text-sm font-medium mb-1">종료날짜</label><input type="date" id="feEndDate" class="w-full p-2 border rounded-lg"></div>' +
+              '</div>' +
+              '<div class="grid grid-cols-2 gap-2">' +
+                '<div><label class="block text-sm font-medium mb-1">매월 출금일</label><select id="fePayDay" class="w-full p-2 border rounded-lg">' +
+                  Array.from({length: 28}, function(_, i) { return '<option value="' + (i + 1) + '">' + (i + 1) + '일</option>'; }).join('') +
+                '</select></div>' +
+                '<div><label class="block text-sm font-medium mb-1">매월 금액</label><input type="text" id="feAmount" class="w-full p-2 border rounded-lg" placeholder="금액" oninput="formatAmountInput(this)"></div>' +
+              '</div>' +
+              '<div><label class="block text-sm font-medium mb-1">결제수단</label><select id="fePaymentMethod" class="w-full p-2 border rounded-lg"><option value="card">카드</option><option value="cash">현금</option><option value="other">기타지불</option></select></div>' +
+              '<div><label class="block text-sm font-medium mb-1">카테고리</label><select id="feCategory" class="w-full p-2 border rounded-lg">' +
+                '<option value="">선택하세요</option>' +
+                state.categories.expense.map(function(c) { return '<option value="' + c + '">' + c + '</option>'; }).join('') +
+              '</select></div>' +
+              '<div><label class="block text-sm font-medium mb-1">메모</label><input type="text" id="feMemo" class="w-full p-2 border rounded-lg" placeholder="메모 입력"></div>' +
+              '<div class="bg-purple-100 p-3 rounded-lg text-sm text-purple-700">' +
+                '💡 고정비는 시작날짜부터 종료날짜까지 매월 출금일에 자동으로 지출이 입력됩니다.' +
+              '</div>' +
+            '</div>' +
             '<div id="expense-options">' +
-              '<div><label class="block text-sm font-medium mb-1">결제수단</label><select id="txPayment" onchange="toggleInstallment()" class="w-full p-2 border rounded-lg"><option value="card">카드</option><option value="cash">현금</option></select></div>' +
-              '<div id="installment-div" class="mt-4"><label class="block text-sm font-medium mb-1">할부</label><select id="txInstallment" class="w-full p-2 border rounded-lg"><option value="0">일시불</option><option value="2">2개월</option><option value="3">3개월</option><option value="6">6개월</option><option value="12">12개월</option><option value="24">24개월</option></select></div>' +
+              '<div><label class="block text-sm font-medium mb-1">결제수단</label><select id="txPayment" onchange="toggleInstallment()" class="w-full p-2 border rounded-lg"><option value="card">카드</option><option value="cash">현금</option><option value="other">기타지불</option></select></div>' +
+              '<div id="installment-div" class="mt-4"><label class="block text-sm font-medium mb-1">할부</label><select id="txInstallment" onchange="updateInstallmentInfo()" class="w-full p-2 border rounded-lg"><option value="0">일시불</option><option value="2">2개월</option><option value="3">3개월</option><option value="4">4개월</option><option value="5">5개월</option><option value="6">6개월</option><option value="7">7개월</option><option value="8">8개월</option><option value="9">9개월</option><option value="10">10개월</option><option value="11">11개월</option><option value="12">12개월</option><option value="24">24개월</option><option value="36">36개월</option><option value="48">48개월</option><option value="60">60개월</option><option value="72">72개월</option></select><div id="installment-info" class="mt-2 p-2 bg-blue-50 rounded-lg text-xs text-blue-700 hidden"></div></div>' +
               '<div class="mt-4"><label class="block text-sm font-medium mb-1">지출 유형</label>' +
                 '<div class="flex gap-2">' +
                   '<button id="btn-necessary" onclick="setNecessary(true)" class="flex-1 py-2 rounded-lg bg-blue-500 text-white">필요지출</button>' +
@@ -2254,6 +3918,105 @@
 
     var currentTxType = 'expense';
     var isNecessary = true;
+    var isFixedExpenseMode = false;
+
+    function toggleFixedExpenseMode() {
+      isFixedExpenseMode = document.getElementById('isFixedExpense').checked;
+      var regularForm = document.getElementById('regular-expense-form');
+      var fixedForm = document.getElementById('fixed-expense-form');
+      var expenseOptions = document.getElementById('expense-options');
+      var categoryDiv = document.querySelector('#txCategory').parentElement;
+      var memoDiv = document.querySelector('#txMemo').parentElement;
+      
+      if (isFixedExpenseMode) {
+        regularForm.classList.add('hidden');
+        fixedForm.classList.remove('hidden');
+        expenseOptions.classList.add('hidden');
+        categoryDiv.classList.add('hidden');
+        memoDiv.classList.add('hidden');
+      } else {
+        regularForm.classList.remove('hidden');
+        fixedForm.classList.add('hidden');
+        expenseOptions.classList.remove('hidden');
+        categoryDiv.classList.remove('hidden');
+        memoDiv.classList.remove('hidden');
+      }
+    }
+
+    function submitFixedExpense() {
+      var startDate = document.getElementById('feStartDate').value;
+      var endDate = document.getElementById('feEndDate').value;
+      var payDay = parseInt(document.getElementById('fePayDay').value);
+      var amount = getAmountValue('feAmount');
+      var paymentMethod = document.getElementById('fePaymentMethod').value;
+      var category = document.getElementById('feCategory').value;
+      var memo = document.getElementById('feMemo').value;
+
+      if (!startDate) { alert('시작날짜를 선택해주세요'); return false; }
+      if (!amount || amount <= 0) { alert('금액을 입력해주세요'); return false; }
+      if (!category) { alert('카테고리를 선택해주세요'); return false; }
+
+      var newFixedExpense = {
+        id: Date.now(),
+        startDate: startDate,
+        endDate: endDate || null,
+        payDay: payDay,
+        amount: amount,
+        paymentMethod: paymentMethod,
+        category: category,
+        memo: memo,
+        active: true,
+        createdAt: new Date().toISOString()
+      };
+
+      state.fixedExpenses.push(newFixedExpense);
+      saveData();
+      
+      // 즉시 자동 입력 실행
+      checkAutoFixedExpenses();
+      
+      return true;
+    }
+
+    function editFixedExpense(id) {
+      var fe = state.fixedExpenses.find(function(f) { return f.id === id; });
+      if (!fe) return;
+      
+      var newAmount = prompt('매월 금액:', fe.amount.toLocaleString());
+      if (newAmount === null) return;
+      
+      var newEndDate = prompt('종료날짜 (YYYY-MM-DD, 비워두면 무기한):', fe.endDate || '');
+      if (newEndDate === null) return;
+      
+      fe.amount = parseInt(newAmount.replace(/[^\d]/g, ''), 10) || fe.amount;
+      fe.endDate = newEndDate || null;
+      
+      saveData();
+      render();
+      showToast('고정비가 수정되었습니다');
+    }
+
+    function deleteFixedExpense(id) {
+      if (confirm('이 고정비를 종료하시겠습니까?')) {
+        var fe = state.fixedExpenses.find(function(f) { return f.id === id; });
+        if (fe) {
+          fe.active = false;
+          fe.endDate = new Date().toISOString().split('T')[0];
+        }
+        saveData();
+        render();
+        showToast('고정비가 종료되었습니다');
+      }
+    }
+
+    function permanentDeleteFixedExpense(id) {
+      if (confirm('이 고정비를 완전히 삭제하시겠습니까? (관련 거래 내역은 유지됩니다)')) {
+        state.fixedExpenses = state.fixedExpenses.filter(function(f) { return f.id !== id; });
+        saveData();
+        render();
+        showToast('고정비가 삭제되었습니다');
+      }
+    }
 
     function setTxType(type) {
       currentTxType = type;
@@ -2261,6 +4024,23 @@
       document.getElementById('btn-expense').className = type === 'expense' ? 'flex-1 py-2 rounded-lg bg-red-500 text-white' : 'flex-1 py-2 rounded-lg bg-gray-200';
       document.getElementById('btn-income').className = type === 'income' ? 'flex-1 py-2 rounded-lg bg-green-500 text-white' : 'flex-1 py-2 rounded-lg bg-gray-200';
       document.getElementById('expense-options').style.display = type === 'expense' ? 'block' : 'none';
+      
+      // 고정비 토글 표시/숨김
+      var fixedExpenseToggle = document.getElementById('fixed-expense-toggle');
+      if (fixedExpenseToggle) {
+        fixedExpenseToggle.style.display = type === 'expense' ? 'flex' : 'none';
+      }
+      
+      // 수입 선택시 고정비 모드 해제
+      if (type === 'income') {
+        var checkbox = document.getElementById('isFixedExpense');
+        if (checkbox && checkbox.checked) {
+          checkbox.checked = false;
+          isFixedExpenseMode = false;
+          document.getElementById('regular-expense-form').classList.remove('hidden');
+          document.getElementById('fixed-expense-form').classList.add('hidden');
+        }
+      }
       
       var catSelect = document.getElementById('txCategory');
       catSelect.innerHTML = '<option value="">선택하세요</option>' + state.categories[type].map(function(c) { return '<option value="' + c + '">' + c + '</option>'; }).join('');
@@ -2276,34 +4056,137 @@
     function toggleInstallment() {
       var payment = document.getElementById('txPayment').value;
       document.getElementById('installment-div').style.display = payment === 'card' ? 'block' : 'none';
+      // 카드가 아닌 경우 할부 선택 초기화
+      if (payment !== 'card') {
+        var installmentSelect = document.getElementById('txInstallment');
+        if (installmentSelect) installmentSelect.value = '0';
+        var installmentInfo = document.getElementById('installment-info');
+        if (installmentInfo) installmentInfo.classList.add('hidden');
+      }
+      updateInstallmentInfo();
+    }
+
+    function updateInstallmentInfo() {
+      var installmentSelect = document.getElementById('txInstallment');
+      var dateInput = document.getElementById('txDate');
+      var infoDiv = document.getElementById('installment-info');
+      
+      if (!installmentSelect || !infoDiv) return;
+      
+      var installment = Number(installmentSelect.value);
+      var amount = getAmountValue('txAmount');
+      var date = dateInput ? dateInput.value : '';
+      
+      if (installment > 1 && amount > 0) {
+        var monthlyAmount = Math.round(amount / installment);
+        var startDate = date ? new Date(date) : new Date();
+        var endDate = new Date(startDate.getFullYear(), startDate.getMonth() + installment - 1, startDate.getDate());
+        var endDateStr = endDate.getFullYear() + '년 ' + (endDate.getMonth() + 1) + '월';
+        
+        infoDiv.innerHTML = '💳 <strong>' + installment + '개월 할부</strong>: 월 ' + monthlyAmount.toLocaleString() + '원씩 자동 분할 입력됩니다.<br>' +
+                           '📅 ' + (startDate.getMonth() + 1) + '월부터 ' + endDateStr + '까지 매월 자동 등록';
+        infoDiv.classList.remove('hidden');
+      } else {
+        infoDiv.classList.add('hidden');
+      }
     }
 
     function submitTransaction() {
+      // 고정비 모드인 경우
+      if (isFixedExpenseMode) {
+        if (submitFixedExpense()) {
+          state.showAddTransaction = false;
+          isFixedExpenseMode = false;
+          render();
+          showToast('고정비가 등록되었습니다');
+        }
+        return;
+      }
+      
       var type = document.getElementById('txType').value;
       var date = document.getElementById('txDate').value;
-      var amount = Number(document.getElementById('txAmount').value);
+      var amount = getAmountValue('txAmount');
       var category = document.getElementById('txCategory').value;
       var memo = document.getElementById('txMemo').value;
       
       if (!category) { alert('카테고리를 선택해주세요'); return; }
       if (!amount || amount <= 0) { alert('올바른 금액을 입력해주세요'); return; }
 
-      state.transactions.push({
-        id: Date.now(),
-        type: type,
-        date: date,
-        amount: amount,
-        category: category,
-        memo: memo,
-        paymentMethod: type === 'expense' ? document.getElementById('txPayment').value : 'cash',
-        installment: type === 'expense' && document.getElementById('txPayment').value === 'card' ? Number(document.getElementById('txInstallment').value) : 0,
-        isNecessary: type === 'expense' ? document.getElementById('txNecessary').value === 'true' : true
-      });
+      var paymentMethod = type === 'expense' ? document.getElementById('txPayment').value : 'cash';
+      var installment = type === 'expense' && paymentMethod === 'card' ? Number(document.getElementById('txInstallment').value) : 0;
+      var isNecessary = type === 'expense' ? document.getElementById('txNecessary').value === 'true' : true;
+
+      // 할부인 경우 첫 달만 입력하고 나머지는 매월 자동 입력
+      if (installment > 1) {
+        var monthlyAmount = Math.round(amount / installment);
+        var startDate = new Date(date);
+        var startYear = startDate.getFullYear();
+        var startMonth = startDate.getMonth();
+        var startDay = startDate.getDate();
+        
+        var today = new Date();
+        var currentYear = today.getFullYear();
+        var currentMonth = today.getMonth();
+        
+        // 시작월부터 현재월까지 몇 개월 경과했는지 계산
+        var monthsPassed = (currentYear - startYear) * 12 + (currentMonth - startMonth);
+        
+        // 현재 달까지 입력해야 할 회차 (최대 total까지)
+        var shouldHaveInstallments = Math.min(monthsPassed + 1, installment);
+        
+        // 1회차부터 현재까지 모두 입력
+        for (var i = 1; i <= shouldHaveInstallments; i++) {
+          var installmentDate = new Date(startYear, startMonth + (i - 1), startDay);
+          var dateStr = installmentDate.getFullYear() + '-' + 
+                        String(installmentDate.getMonth() + 1).padStart(2, '0') + '-' + 
+                        String(installmentDate.getDate()).padStart(2, '0');
+          
+          state.transactions.push({
+            id: Date.now() + Math.random() + i,
+            type: type,
+            date: dateStr,
+            amount: monthlyAmount,
+            category: category,
+            memo: memo ? memo + ' (' + i + '/' + installment + '회차)' : '할부 ' + i + '/' + installment + '회차',
+            paymentMethod: paymentMethod,
+            installment: installment,
+            installmentInfo: { 
+              current: i, 
+              total: installment, 
+              originalAmount: amount,
+              startDate: date,
+              monthlyAmount: monthlyAmount,
+              originalMemo: memo || '',
+              originalCategory: category
+            },
+            isNecessary: isNecessary
+          });
+        }
+        
+        if (shouldHaveInstallments < installment) {
+          showToast(installment + '개월 할부 중 ' + shouldHaveInstallments + '회차까지 입력되었습니다. 다음 달부터 자동 입력됩니다.');
+        } else {
+          showToast(installment + '개월 할부 전체가 입력되었습니다.');
+        }
+      } else {
+        state.transactions.push({
+          id: Date.now(),
+          type: type,
+          date: date,
+          amount: amount,
+          category: category,
+          memo: memo,
+          paymentMethod: paymentMethod,
+          installment: 0,
+          isNecessary: isNecessary
+        });
+        
+        showToast('거래가 추가되었습니다');
+      }
 
       state.showAddTransaction = false;
       saveData();
       render();
-      showToast('거래가 추가되었습니다');
     }
 
     // Add Dividend Modal
@@ -2328,7 +4211,7 @@
             '<div>' +
               '<label class="block text-sm font-medium mb-1 text-gray-700">배당금</label>' +
               '<div class="relative">' +
-                '<input type="number" id="divAmount" class="w-full p-3 pr-12 border rounded-lg" placeholder="0">' +
+                '<input type="text" id="divAmount" class="w-full p-3 pr-12 border rounded-lg" placeholder="0" oninput="formatAmountInput(this)">' +
                 '<span class="absolute right-3 top-3 text-gray-500">원</span>' +
               '</div>' +
             '</div>' +
@@ -2366,9 +4249,9 @@
           '<div class="p-4 space-y-4">' +
             '<div><label class="block text-sm font-medium mb-1">종목명</label><input type="text" id="invName" class="w-full p-2 border rounded-lg" placeholder="예: 삼성전자"></div>' +
             '<div><label class="block text-sm font-medium mb-1">투자 유형</label><select id="invType" class="w-full p-2 border rounded-lg"><option value="stock">📊 주식</option><option value="etf">📦 ETF</option><option value="fund">💼 펀드</option><option value="crypto">🪙 암호화폐</option><option value="gold">🥇 금</option><option value="realestate">🏠 부동산</option><option value="bond">📃 채권</option><option value="other">📄 기타</option></select></div>' +
-            '<div><label class="block text-sm font-medium mb-1">보유 수량</label><input type="number" id="invQuantity" class="w-full p-2 border rounded-lg" placeholder="0"></div>' +
-            '<div><label class="block text-sm font-medium mb-1">매입가 (1주당)</label><input type="number" id="invBuyPrice" class="w-full p-2 border rounded-lg" placeholder="0"></div>' +
-            '<div><label class="block text-sm font-medium mb-1">현재가 (1주당)</label><input type="number" id="invCurrentPrice" class="w-full p-2 border rounded-lg" placeholder="매입가와 동일시 비워두세요"></div>' +
+            '<div><label class="block text-sm font-medium mb-1">보유 수량</label><input type="text" id="invQuantity" class="w-full p-2 border rounded-lg" placeholder="0 (소수점 가능)" oninput="formatQuantityInput(this)"></div>' +
+            '<div><label class="block text-sm font-medium mb-1">매입가 (1주당)</label><input type="text" id="invBuyPrice" class="w-full p-2 border rounded-lg" placeholder="0" oninput="formatAmountInput(this)"></div>' +
+            '<div><label class="block text-sm font-medium mb-1">현재가 (1주당)</label><input type="text" id="invCurrentPrice" class="w-full p-2 border rounded-lg" placeholder="매입가와 동일시 비워두세요" oninput="formatAmountInput(this)"></div>' +
             '<div class="flex gap-2 pt-4">' +
               '<button onclick="addInvestment()" class="flex-1 bg-indigo-500 text-white py-3 rounded-lg font-medium">추가</button>' +
               '<button onclick="state.showAddInvestment=false;render()" class="flex-1 bg-gray-300 py-3 rounded-lg font-medium">취소</button>' +
@@ -2381,48 +4264,217 @@
     // Compound Calculator Modal
     function renderCompoundCalc() {
       return '<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50" onclick="if(event.target===this){state.showCompoundCalc=false;render();}">' +
-        '<div class="bg-white rounded-xl w-full max-w-md max-h-[90vh] overflow-y-auto shadow-2xl">' +
-          '<div class="p-4 border-b flex justify-between items-center"><h2 class="text-xl font-bold">💰 적립식 복리계산기</h2><button onclick="state.showCompoundCalc=false;render()" class="text-gray-500 text-2xl">✕</button></div>' +
-          '<div class="p-4 space-y-4">' +
-            '<div><label class="block text-sm font-medium mb-1">초기 투자금</label><input type="number" id="calcInitial" class="w-full p-3 border rounded-lg" placeholder="0"></div>' +
-            '<div><label class="block text-sm font-medium mb-1">월 적립금</label><input type="number" id="calcMonthly" class="w-full p-3 border rounded-lg" placeholder="0"></div>' +
-            '<div><label class="block text-sm font-medium mb-1">투자 기간 (년)</label><input type="number" id="calcYears" class="w-full p-3 border rounded-lg" placeholder="0"></div>' +
-            '<div><label class="block text-sm font-medium mb-1">연 수익률 (%)</label><input type="number" step="0.1" id="calcRate" class="w-full p-3 border rounded-lg" placeholder="0"></div>' +
-            '<button onclick="calculateCompound()" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg font-bold">계산하기</button>' +
+        '<div class="bg-white rounded-2xl w-full max-w-lg max-h-[95vh] overflow-y-auto shadow-2xl">' +
+          '<div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-5 rounded-t-2xl">' +
+            '<div class="flex justify-between items-center">' +
+              '<div class="flex items-center gap-3">' +
+                '<div class="bg-white bg-opacity-20 p-2 rounded-lg"><span class="text-2xl">💰</span></div>' +
+                '<div><h2 class="text-xl font-bold text-white">적립식 복리계산기</h2><p class="text-indigo-200 text-xs">복리의 마법을 경험하세요</p></div>' +
+              '</div>' +
+              '<button onclick="state.showCompoundCalc=false;render()" class="text-white text-2xl hover:bg-white hover:bg-opacity-20 rounded-full w-8 h-8 flex items-center justify-center transition">✕</button>' +
+            '</div>' +
+          '</div>' +
+          '<div class="p-5 space-y-4">' +
+            '<div class="grid grid-cols-2 gap-3">' +
+              '<div class="bg-gray-50 p-3 rounded-xl">' +
+                '<label class="block text-xs font-medium text-gray-500 mb-1">💵 초기 투자금</label>' +
+                '<input type="text" id="calcInitial" class="w-full p-2 border-2 border-gray-200 rounded-lg font-bold text-lg focus:border-indigo-500 focus:outline-none transition" placeholder="0" oninput="formatAmountInput(this)">' +
+              '</div>' +
+              '<div class="bg-gray-50 p-3 rounded-xl">' +
+                '<label class="block text-xs font-medium text-gray-500 mb-1">📅 월 적립금</label>' +
+                '<input type="text" id="calcMonthly" class="w-full p-2 border-2 border-gray-200 rounded-lg font-bold text-lg focus:border-indigo-500 focus:outline-none transition" placeholder="0" oninput="formatAmountInput(this)">' +
+              '</div>' +
+            '</div>' +
+            '<div class="grid grid-cols-2 gap-3">' +
+              '<div class="bg-gray-50 p-3 rounded-xl">' +
+                '<label class="block text-xs font-medium text-gray-500 mb-1">⏱️ 투자 기간</label>' +
+                '<div class="flex items-center gap-2">' +
+                  '<input type="number" id="calcYears" class="w-full p-2 border-2 border-gray-200 rounded-lg font-bold text-lg focus:border-indigo-500 focus:outline-none transition" placeholder="0">' +
+                  '<span class="text-gray-500 font-medium">년</span>' +
+                '</div>' +
+              '</div>' +
+              '<div class="bg-gray-50 p-3 rounded-xl">' +
+                '<label class="block text-xs font-medium text-gray-500 mb-1">📈 연 수익률</label>' +
+                '<div class="flex items-center gap-2">' +
+                  '<input type="number" step="0.1" id="calcRate" class="w-full p-2 border-2 border-gray-200 rounded-lg font-bold text-lg focus:border-indigo-500 focus:outline-none transition" placeholder="0">' +
+                  '<span class="text-gray-500 font-medium">%</span>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="flex gap-2">' +
+              '<button onclick="calculateCompound()" class="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-3 rounded-xl font-bold shadow-lg transform hover:scale-[1.02] transition flex items-center justify-center gap-2">' +
+                '<i data-lucide="calculator" class="w-5 h-5"></i> 계산하기' +
+              '</button>' +
+              '<button onclick="resetCompoundCalc()" class="px-4 bg-gray-200 hover:bg-gray-300 text-gray-700 py-3 rounded-xl font-medium transition">' +
+                '<i data-lucide="refresh-cw" class="w-5 h-5"></i>' +
+              '</button>' +
+            '</div>' +
             '<div id="calc-result"></div>' +
           '</div>' +
         '</div>' +
       '</div>';
     }
 
+    function resetCompoundCalc() {
+      document.getElementById('calcInitial').value = '';
+      document.getElementById('calcMonthly').value = '';
+      document.getElementById('calcYears').value = '';
+      document.getElementById('calcRate').value = '';
+      document.getElementById('calc-result').innerHTML = '';
+    }
+
     function calculateCompound() {
-      var initial = Number(document.getElementById('calcInitial').value) || 0;
-      var monthly = Number(document.getElementById('calcMonthly').value) || 0;
+      var initial = getAmountValue('calcInitial');
+      var monthly = getAmountValue('calcMonthly');
       var years = Number(document.getElementById('calcYears').value) || 0;
       var rate = Number(document.getElementById('calcRate').value) / 100 || 0;
 
-      if (years === 0) { alert('기간을 입력해주세요'); return; }
+      if (years === 0) { alert('투자 기간을 입력해주세요'); return; }
+      if (initial === 0 && monthly === 0) { alert('초기 투자금 또는 월 적립금을 입력해주세요'); return; }
 
+      // 연도별 데이터 계산
+      var yearlyData = [];
       var currentAmount = initial;
+      var totalDeposit = initial;
+      
+      // 0년차 (초기)
+      yearlyData.push({
+        year: 0,
+        totalAmount: initial,
+        deposit: initial,
+        interest: 0,
+        yearlyInterest: 0
+      });
+
       for (var year = 1; year <= years; year++) {
+        var yearStartAmount = currentAmount;
         for (var month = 1; month <= 12; month++) {
           currentAmount += monthly;
           currentAmount = currentAmount * (1 + rate / 12);
         }
+        totalDeposit += monthly * 12;
+        var totalInterest = currentAmount - totalDeposit;
+        var yearlyInterest = currentAmount - yearStartAmount - (monthly * 12);
+        
+        yearlyData.push({
+          year: year,
+          totalAmount: Math.round(currentAmount),
+          deposit: totalDeposit,
+          interest: Math.round(totalInterest),
+          yearlyInterest: Math.round(yearlyInterest)
+        });
       }
 
       var finalAmount = Math.round(currentAmount);
-      var totalDeposit = initial + (monthly * 12 * years);
-      var totalInterest = finalAmount - totalDeposit;
+      var finalDeposit = totalDeposit;
+      var totalInterest = finalAmount - finalDeposit;
+      var profitRate = finalDeposit > 0 ? ((totalInterest / finalDeposit) * 100).toFixed(1) : 0;
+      var maxAmount = finalAmount;
 
-      document.getElementById('calc-result').innerHTML = '<div class="bg-gradient-to-r from-purple-100 to-blue-100 p-5 rounded-xl shadow-lg mt-4">' +
-        '<h3 class="font-bold text-lg mb-4 text-center text-purple-700">최종 결과</h3>' +
-        '<div class="grid grid-cols-3 gap-3">' +
-          '<div class="bg-white p-3 rounded-lg text-center shadow"><div class="text-xs text-gray-600">최종 금액</div><div class="font-bold text-purple-600">' + formatNumber(finalAmount) + '원</div></div>' +
-          '<div class="bg-white p-3 rounded-lg text-center shadow"><div class="text-xs text-gray-600">총 납입금</div><div class="font-bold text-blue-600">' + formatNumber(totalDeposit) + '원</div></div>' +
-          '<div class="bg-white p-3 rounded-lg text-center shadow"><div class="text-xs text-gray-600">총 이자</div><div class="font-bold text-green-600">' + formatNumber(totalInterest) + '원</div></div>' +
-        '</div>' +
+      // 그래프 바 생성
+      var chartBarsHtml = yearlyData.map(function(d, idx) {
+        var depositHeight = maxAmount > 0 ? (d.deposit / maxAmount * 100) : 0;
+        var interestHeight = maxAmount > 0 ? (d.interest / maxAmount * 100) : 0;
+        var totalHeight = depositHeight + interestHeight;
+        var isLast = idx === yearlyData.length - 1;
+        
+        return '<div class="flex flex-col items-center flex-1 min-w-[30px]">' +
+          '<div class="h-32 w-full flex flex-col justify-end items-center relative">' +
+            '<div class="w-full max-w-[24px] rounded-t-md overflow-hidden flex flex-col justify-end" style="height: ' + totalHeight + '%">' +
+              (d.interest > 0 ? '<div class="bg-gradient-to-t from-green-400 to-emerald-400 w-full" style="height: ' + (interestHeight / (totalHeight || 1) * 100) + '%"></div>' : '') +
+              '<div class="bg-gradient-to-t from-indigo-500 to-purple-500 w-full" style="height: ' + (depositHeight / (totalHeight || 1) * 100) + '%"></div>' +
+            '</div>' +
+            (isLast ? '<div class="absolute -top-6 text-xs font-bold text-purple-600">' + (d.totalAmount / 10000).toFixed(0) + '만</div>' : '') +
+          '</div>' +
+          '<div class="text-xs text-gray-500 mt-1 font-medium">' + d.year + '년</div>' +
+        '</div>';
+      }).join('');
+
+      // 연도별 상세 테이블 (전체 펼침)
+      var yearlyTableHtml = '<div class="overflow-x-auto">' +
+        '<table class="w-full text-sm">' +
+          '<thead class="bg-indigo-100">' +
+            '<tr>' +
+              '<th class="py-2.5 px-2 text-left text-indigo-800 font-bold">년차</th>' +
+              '<th class="py-2.5 px-2 text-right text-indigo-800 font-bold">총 금액</th>' +
+              '<th class="py-2.5 px-2 text-right text-indigo-800 font-bold">납입금</th>' +
+              '<th class="py-2.5 px-2 text-right text-indigo-800 font-bold">누적 이자</th>' +
+              '<th class="py-2.5 px-2 text-right text-indigo-800 font-bold">연 이자</th>' +
+            '</tr>' +
+          '</thead>' +
+          '<tbody>' +
+            yearlyData.slice(1).map(function(d, idx) {
+              var isEven = idx % 2 === 0;
+              var isMilestone = d.year % 5 === 0;
+              return '<tr class="' + (isMilestone ? 'bg-purple-50 border-l-4 border-purple-400' : (isEven ? 'bg-white' : 'bg-gray-50')) + ' border-b border-gray-200">' +
+                '<td class="py-2.5 px-2 font-bold ' + (isMilestone ? 'text-purple-700' : 'text-indigo-700') + '">' + d.year + '년' + (isMilestone ? ' 🎯' : '') + '</td>' +
+                '<td class="py-2.5 px-2 text-right font-bold text-gray-800">' + formatNumber(d.totalAmount) + '원</td>' +
+                '<td class="py-2.5 px-2 text-right text-blue-700 font-medium">' + formatNumber(d.deposit) + '원</td>' +
+                '<td class="py-2.5 px-2 text-right text-green-700 font-bold">+' + formatNumber(d.interest) + '원</td>' +
+                '<td class="py-2.5 px-2 text-right text-emerald-600 font-medium">+' + formatNumber(d.yearlyInterest) + '원</td>' +
+              '</tr>';
+            }).join('') +
+          '</tbody>' +
+        '</table>' +
       '</div>';
+
+      // 결과 HTML
+      document.getElementById('calc-result').innerHTML = 
+        // 최종 결과 카드
+        '<div class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 p-5 rounded-2xl shadow-xl mt-4 text-white">' +
+          '<div class="text-center mb-4">' +
+            '<div class="text-indigo-200 text-sm font-medium mb-1">🎯 ' + years + '년 후 예상 자산</div>' +
+            '<div class="text-4xl font-bold">' + formatNumber(finalAmount) + '<span class="text-xl ml-1">원</span></div>' +
+            '<div class="text-indigo-200 text-sm mt-1">수익률 +' + profitRate + '%</div>' +
+          '</div>' +
+          '<div class="grid grid-cols-3 gap-2">' +
+            '<div class="bg-white rounded-xl p-3 text-center shadow-md">' +
+              '<div class="text-gray-500 text-xs font-medium mb-1">총 납입금</div>' +
+              '<div class="font-bold text-xl text-blue-600">' + (finalDeposit / 10000).toFixed(0) + '만</div>' +
+            '</div>' +
+            '<div class="bg-white rounded-xl p-3 text-center shadow-md">' +
+              '<div class="text-gray-500 text-xs font-medium mb-1">총 이자</div>' +
+              '<div class="font-bold text-xl text-green-600">+' + (totalInterest / 10000).toFixed(0) + '만</div>' +
+            '</div>' +
+            '<div class="bg-white rounded-xl p-3 text-center shadow-md">' +
+              '<div class="text-gray-500 text-xs font-medium mb-1">이자 비율</div>' +
+              '<div class="font-bold text-xl text-orange-500">' + (finalAmount > 0 ? (totalInterest / finalAmount * 100).toFixed(0) : 0) + '%</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+        
+        // 자산 성장 그래프
+        '<div class="bg-white border border-gray-200 rounded-2xl p-4 mt-4 shadow-sm">' +
+          '<div class="flex justify-between items-center mb-3">' +
+            '<h4 class="font-bold text-gray-800 flex items-center gap-2"><span>📊</span> 자산 성장 그래프</h4>' +
+            '<div class="flex items-center gap-3 text-xs">' +
+              '<div class="flex items-center gap-1"><div class="w-3 h-3 rounded bg-gradient-to-r from-indigo-500 to-purple-500"></div><span class="text-gray-600">납입금</span></div>' +
+              '<div class="flex items-center gap-1"><div class="w-3 h-3 rounded bg-gradient-to-r from-green-400 to-emerald-400"></div><span class="text-gray-600">이자</span></div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="flex items-end gap-1 px-2 border-b border-gray-200 pb-2">' +
+            chartBarsHtml +
+          '</div>' +
+        '</div>' +
+        
+        // 연도별 상세 내역
+        '<div class="bg-white border border-gray-200 rounded-2xl p-4 mt-4 shadow-sm">' +
+          '<h4 class="font-bold text-gray-800 flex items-center gap-2 mb-3"><span>📋</span> 연도별 상세 내역</h4>' +
+          yearlyTableHtml +
+        '</div>' +
+        
+        // 복리 효과 설명
+        '<div class="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-4 mt-4">' +
+          '<h4 class="font-bold text-amber-700 flex items-center gap-2 mb-2"><span>💡</span> 복리의 힘</h4>' +
+          '<div class="text-sm text-amber-800 space-y-1">' +
+            '<p>• 매월 <strong>' + formatNumber(monthly) + '원</strong>씩 <strong>' + years + '년</strong>간 적립</p>' +
+            '<p>• 연 <strong>' + (rate * 100).toFixed(1) + '%</strong> 수익률로 복리 적용</p>' +
+            '<p>• 복리 효과로 <strong>' + formatNumber(totalInterest) + '원</strong>의 추가 수익 발생!</p>' +
+            (totalInterest > finalDeposit ? '<p class="text-orange-600 font-bold">🔥 이자가 납입금을 초과했습니다!</p>' : '') +
+          '</div>' +
+        '</div>';
+
+      lucide.createIcons();
     }
 
     // Settings Modal
@@ -2431,6 +4483,13 @@
         return '<div class="flex justify-between items-center p-2 border rounded bg-gray-50">' +
           '<span>' + c + '</span>' +
           '<button onclick="deleteCategory(\'' + currentCatType + '\',' + i + ')" class="text-red-500 text-sm px-2">삭제</button>' +
+        '</div>';
+      }).join('');
+      
+      var fixedCategoryListHtml = (state.categories.fixedExpense || []).map(function(c, i) {
+        return '<div class="flex justify-between items-center p-2 border rounded bg-purple-50">' +
+          '<span>' + c + '</span>' +
+          '<button onclick="deleteFixedCategory(' + i + ')" class="text-red-500 text-sm px-2">삭제</button>' +
         '</div>';
       }).join('');
 
@@ -2466,6 +4525,7 @@
                 '<p>버전: 2.0</p>' +
                 '<p>총 거래: ' + state.transactions.length + '건</p>' +
                 '<p>총 투자: ' + state.investments.length + '개</p>' +
+                '<p>총 대출: ' + state.loans.length + '건</p>' +
                 '<p>USD 거래: ' + state.usdPhases.length + '건</p>' +
                 '<p>JPY 거래: ' + state.jpyPhases.length + '건</p>' +
               '</div>' +
@@ -2526,6 +4586,7 @@
         state.investments = [];
         state.dividends = [];
         state.investmentJournals = [];
+        state.loans = [];
         state.goals = { year7: '', year5: '', year3: '', thisYear: '' };
         state.undoStack = [];
         state.usdPhases = [];
@@ -2604,6 +4665,7 @@
       if (state.showAddInvestment) modals += renderAddInvestmentModal();
       if (state.showAddDividend) modals += renderAddDividendModal();
       if (state.showAddJournal) modals += renderAddJournalModal();
+      if (state.showRankInfo) modals += renderRankInfoModal();
 
       app.innerHTML = renderHeader() + '<div class="pb-4">' + content + '</div>' + renderNavbar() + modals;
 
