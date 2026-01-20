@@ -2270,9 +2270,15 @@
     // Investment Screen
     var investmentSearchKeyword = '';
     var isComposingInvestment = false;
+    var investmentListExpanded = false;
     
     function updateInvestmentSearch(keyword) {
       investmentSearchKeyword = keyword;
+      updateInvestmentList();
+    }
+    
+    function toggleInvestmentList() {
+      investmentListExpanded = !investmentListExpanded;
       updateInvestmentList();
     }
     
@@ -2308,6 +2314,18 @@
         other: 'from-indigo-500 to-purple-600' 
       };
       
+      // 투자 유형별 수량 단위
+      var typeUnits = { 
+        stock: '주', 
+        etf: '주', 
+        fund: '주', 
+        crypto: '주', 
+        gold: '돈', 
+        realestate: '개', 
+        bond: '개', 
+        other: '개' 
+      };
+      
       var investListHtml = '';
       if (state.investments.length === 0) {
         investListHtml = '<div class="text-center py-12">' +
@@ -2325,7 +2343,11 @@
           '<p class="text-gray-500">"' + investmentSearchKeyword + '" 검색 결과가 없습니다</p>' +
         '</div>';
       } else {
-        investListHtml = filteredInvestments.map(function(inv) {
+        // 표시할 항목 결정 (1개 또는 전체)
+        var visibleInvestments = investmentListExpanded ? filteredInvestments : filteredInvestments.slice(0, 1);
+        var hiddenCount = filteredInvestments.length - 1;
+        
+        function renderInvestmentCard(inv) {
           var invested = inv.buyPrice * inv.quantity;
           var current = inv.currentPrice * inv.quantity;
           var profit = current - invested;
@@ -2333,6 +2355,7 @@
           var icon = typeIcons[inv.type] || '📄';
           var label = typeLabels[inv.type] || '기타';
           var gradient = typeGradients[inv.type] || 'from-indigo-500 to-purple-600';
+          var unit = typeUnits[inv.type] || '개';
           
           return '<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300">' +
             '<div class="bg-gradient-to-r ' + gradient + ' p-4">' +
@@ -2344,8 +2367,8 @@
                   '<div>' +
                     '<div class="font-bold text-white text-lg drop-shadow-sm">' + inv.name + '</div>' +
                     '<div class="flex items-center gap-2 mt-1">' +
-                      '<span class="text-xs bg-white bg-opacity-30 text-white px-2 py-0.5 rounded-full font-medium">' + label + '</span>' +
-                      '<span class="text-white text-opacity-90 text-xs">' + (Number.isInteger(inv.quantity) ? inv.quantity : inv.quantity.toFixed(4)) + '주</span>' +
+                      '<span class="text-xs bg-white px-2 py-0.5 rounded-full font-semibold text-gray-700 shadow-sm">' + label + '</span>' +
+                      '<span class="text-white text-opacity-90 text-xs">' + (Number.isInteger(inv.quantity) ? inv.quantity : inv.quantity.toFixed(4)) + unit + '</span>' +
                     '</div>' +
                   '</div>' +
                 '</div>' +
@@ -2388,7 +2411,18 @@
               '</div>' +
             '</div>' +
           '</div>';
-        }).join('');
+        }
+        
+        investListHtml = visibleInvestments.map(renderInvestmentCard).join('');
+        
+        // 더보기/접기 버튼 추가 (2개 이상일 때만)
+        if (filteredInvestments.length > 1) {
+          investListHtml += '<button onclick="toggleInvestmentList()" class="w-full py-3 mt-3 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 font-semibold rounded-xl hover:from-indigo-200 hover:to-purple-200 transition-all duration-200 flex items-center justify-center gap-2">' +
+            (investmentListExpanded ? 
+              '<i data-lucide="chevron-up" class="w-5 h-5"></i><span>접기</span>' : 
+              '<i data-lucide="chevron-down" class="w-5 h-5"></i><span>더보기 (' + hiddenCount + '개)</span>') +
+          '</button>';
+        }
       }
       
       listContainer.innerHTML = investListHtml;
@@ -2401,9 +2435,15 @@
     }
     
     var isComposingDividend = false;
+    var dividendListExpanded = false;
     
     function updateDividendSearch(keyword) {
       state.dividendSearchKeyword = keyword;
+      updateDividendList();
+    }
+    
+    function toggleDividendList() {
+      dividendListExpanded = !dividendListExpanded;
       updateDividendList();
     }
     
@@ -2475,34 +2515,49 @@
       } else {
         if (dividendPeriod === 'all') {
           var sortedDividends = filteredDividends.slice().sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
-          dividendListHtml = '<div class="space-y-2">' +
-            sortedDividends.map(function(d, idx) {
-              return '<div class="bg-white rounded-xl p-3 shadow-sm border border-green-100 hover:shadow-md hover:border-green-200 transition-all duration-200">' +
-                '<div class="flex items-center justify-between">' +
-                  '<div class="flex items-center gap-3">' +
-                    '<div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-500 rounded-lg flex items-center justify-center shadow-sm">' +
-                      '<span class="text-white font-bold text-sm">' + (d.stockName.charAt(0)) + '</span>' +
-                    '</div>' +
-                    '<div>' +
-                      '<div class="font-semibold text-gray-800">' + d.stockName + '</div>' +
-                      '<div class="text-xs text-gray-400 flex items-center gap-1">' +
-                        '<i data-lucide="calendar" class="w-3 h-3"></i>' + d.date +
-                      '</div>' +
-                    '</div>' +
+          // 표시할 항목 결정 (10개 또는 전체)
+          var visibleDividends = dividendListExpanded ? sortedDividends : sortedDividends.slice(0, 10);
+          var hiddenDivCount = sortedDividends.length - 10;
+          
+          function renderDividendCard(d) {
+            return '<div class="bg-white rounded-xl p-3 shadow-sm border border-green-100 hover:shadow-md hover:border-green-200 transition-all duration-200">' +
+              '<div class="flex items-center justify-between">' +
+                '<div class="flex items-center gap-3">' +
+                  '<div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-500 rounded-lg flex items-center justify-center shadow-sm">' +
+                    '<span class="text-white font-bold text-sm">' + (d.stockName.charAt(0)) + '</span>' +
                   '</div>' +
-                  '<div class="flex items-center gap-3">' +
-                    '<div class="text-right">' +
-                      '<div class="font-bold text-green-600 text-lg">+' + formatNumber(d.amount) + '</div>' +
-                      '<div class="text-xs text-gray-400">원</div>' +
+                  '<div>' +
+                    '<div class="font-semibold text-gray-800">' + d.stockName + '</div>' +
+                    '<div class="text-xs text-gray-400 flex items-center gap-1">' +
+                      '<i data-lucide="calendar" class="w-3 h-3"></i>' + d.date +
                     '</div>' +
-                    '<button onclick="deleteDividend(' + d.id + ')" class="w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 transition-colors">' +
-                      '<i data-lucide="trash-2" class="w-4 h-4"></i>' +
-                    '</button>' +
                   '</div>' +
                 '</div>' +
-              '</div>';
-            }).join('') +
+                '<div class="flex items-center gap-3">' +
+                  '<div class="text-right">' +
+                    '<div class="font-bold text-green-600 text-lg">+' + formatNumber(d.amount) + '</div>' +
+                    '<div class="text-xs text-gray-400">원</div>' +
+                  '</div>' +
+                  '<button onclick="deleteDividend(' + d.id + ')" class="w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 transition-colors">' +
+                    '<i data-lucide="trash-2" class="w-4 h-4"></i>' +
+                  '</button>' +
+                '</div>' +
+              '</div>' +
+            '</div>';
+          }
+          
+          dividendListHtml = '<div class="space-y-2">' +
+            visibleDividends.map(renderDividendCard).join('') +
           '</div>';
+          
+          // 더보기/접기 버튼 추가 (11개 이상일 때만)
+          if (sortedDividends.length > 10) {
+            dividendListHtml += '<button onclick="toggleDividendList()" class="w-full py-3 mt-3 bg-gradient-to-r from-emerald-100 to-green-100 text-green-700 font-semibold rounded-xl hover:from-emerald-200 hover:to-green-200 transition-all duration-200 flex items-center justify-center gap-2">' +
+              (dividendListExpanded ? 
+                '<i data-lucide="chevron-up" class="w-5 h-5"></i><span>접기</span>' : 
+                '<i data-lucide="chevron-down" class="w-5 h-5"></i><span>더보기 (' + hiddenDivCount + '건)</span>') +
+            '</button>';
+          }
         } else {
           dividendListHtml = '<div class="space-y-4">' +
             Object.keys(groupedDividends).sort().reverse().map(function(period) {
@@ -2580,6 +2635,18 @@
         other: 'from-indigo-500 to-purple-600' 
       };
       
+      // 투자 유형별 수량 단위
+      var typeUnits = { 
+        stock: '주', 
+        etf: '주', 
+        fund: '주', 
+        crypto: '주', 
+        gold: '돈', 
+        realestate: '개', 
+        bond: '개', 
+        other: '개' 
+      };
+      
       var investListHtml = '';
       if (state.investments.length === 0) {
         investListHtml = '<div class="text-center py-12">' +
@@ -2597,7 +2664,11 @@
           '<p class="text-gray-500">"' + investmentSearchKeyword + '" 검색 결과가 없습니다</p>' +
         '</div>';
       } else {
-        investListHtml = filteredInvestments.map(function(inv) {
+        // 표시할 항목 결정 (1개 또는 전체)
+        var visibleInvestments = investmentListExpanded ? filteredInvestments : filteredInvestments.slice(0, 1);
+        var hiddenCount = filteredInvestments.length - 1;
+        
+        function renderInvCard(inv) {
           var invested = inv.buyPrice * inv.quantity;
           var current = inv.currentPrice * inv.quantity;
           var profit = current - invested;
@@ -2605,6 +2676,7 @@
           var icon = typeIcons[inv.type] || '📄';
           var label = typeLabels[inv.type] || '기타';
           var gradient = typeGradients[inv.type] || 'from-indigo-500 to-purple-600';
+          var unit = typeUnits[inv.type] || '개';
           
           return '<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300">' +
             '<div class="bg-gradient-to-r ' + gradient + ' p-4">' +
@@ -2616,8 +2688,8 @@
                   '<div>' +
                     '<div class="font-bold text-white text-lg drop-shadow-sm">' + inv.name + '</div>' +
                     '<div class="flex items-center gap-2 mt-1">' +
-                      '<span class="text-xs bg-white bg-opacity-30 text-white px-2 py-0.5 rounded-full font-medium">' + label + '</span>' +
-                      '<span class="text-white text-opacity-90 text-xs">' + (Number.isInteger(inv.quantity) ? inv.quantity : inv.quantity.toFixed(4)) + '주</span>' +
+                      '<span class="text-xs bg-white px-2 py-0.5 rounded-full font-semibold text-gray-700 shadow-sm">' + label + '</span>' +
+                      '<span class="text-white text-opacity-90 text-xs">' + (Number.isInteger(inv.quantity) ? inv.quantity : inv.quantity.toFixed(4)) + unit + '</span>' +
                     '</div>' +
                   '</div>' +
                 '</div>' +
@@ -2660,7 +2732,18 @@
               '</div>' +
             '</div>' +
           '</div>';
-        }).join('');
+        }
+        
+        investListHtml = visibleInvestments.map(renderInvCard).join('');
+        
+        // 더보기/접기 버튼 추가 (2개 이상일 때만)
+        if (filteredInvestments.length > 1) {
+          investListHtml += '<button onclick="toggleInvestmentList()" class="w-full py-3 mt-3 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 font-semibold rounded-xl hover:from-indigo-200 hover:to-purple-200 transition-all duration-200 flex items-center justify-center gap-2">' +
+            (investmentListExpanded ? 
+              '<i data-lucide="chevron-up" class="w-5 h-5"></i><span>접기</span>' : 
+              '<i data-lucide="chevron-down" class="w-5 h-5"></i><span>더보기 (' + hiddenCount + '개)</span>') +
+          '</button>';
+        }
       }
 
       // Dividend filtering and grouping
@@ -2711,34 +2794,49 @@
       } else {
         if (dividendPeriod === 'all') {
           var sortedDividends = filteredDividends.slice().sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
-          dividendListHtml = '<div class="space-y-2">' +
-            sortedDividends.map(function(d, idx) {
-              return '<div class="bg-white rounded-xl p-3 shadow-sm border border-green-100 hover:shadow-md hover:border-green-200 transition-all duration-200">' +
-                '<div class="flex items-center justify-between">' +
-                  '<div class="flex items-center gap-3">' +
-                    '<div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-500 rounded-lg flex items-center justify-center shadow-sm">' +
-                      '<span class="text-white font-bold text-sm">' + (d.stockName.charAt(0)) + '</span>' +
-                    '</div>' +
-                    '<div>' +
-                      '<div class="font-semibold text-gray-800">' + d.stockName + '</div>' +
-                      '<div class="text-xs text-gray-400 flex items-center gap-1">' +
-                        '<i data-lucide="calendar" class="w-3 h-3"></i>' + d.date +
-                      '</div>' +
-                    '</div>' +
+          // 표시할 항목 결정 (10개 또는 전체)
+          var visibleDividends = dividendListExpanded ? sortedDividends : sortedDividends.slice(0, 10);
+          var hiddenDivCount = sortedDividends.length - 10;
+          
+          function renderDivCard(d) {
+            return '<div class="bg-white rounded-xl p-3 shadow-sm border border-green-100 hover:shadow-md hover:border-green-200 transition-all duration-200">' +
+              '<div class="flex items-center justify-between">' +
+                '<div class="flex items-center gap-3">' +
+                  '<div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-500 rounded-lg flex items-center justify-center shadow-sm">' +
+                    '<span class="text-white font-bold text-sm">' + (d.stockName.charAt(0)) + '</span>' +
                   '</div>' +
-                  '<div class="flex items-center gap-3">' +
-                    '<div class="text-right">' +
-                      '<div class="font-bold text-green-600 text-lg">+' + formatNumber(d.amount) + '</div>' +
-                      '<div class="text-xs text-gray-400">원</div>' +
+                  '<div>' +
+                    '<div class="font-semibold text-gray-800">' + d.stockName + '</div>' +
+                    '<div class="text-xs text-gray-400 flex items-center gap-1">' +
+                      '<i data-lucide="calendar" class="w-3 h-3"></i>' + d.date +
                     '</div>' +
-                    '<button onclick="deleteDividend(' + d.id + ')" class="w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 transition-colors">' +
-                      '<i data-lucide="trash-2" class="w-4 h-4"></i>' +
-                    '</button>' +
                   '</div>' +
                 '</div>' +
-              '</div>';
-            }).join('') +
+                '<div class="flex items-center gap-3">' +
+                  '<div class="text-right">' +
+                    '<div class="font-bold text-green-600 text-lg">+' + formatNumber(d.amount) + '</div>' +
+                    '<div class="text-xs text-gray-400">원</div>' +
+                  '</div>' +
+                  '<button onclick="deleteDividend(' + d.id + ')" class="w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 transition-colors">' +
+                    '<i data-lucide="trash-2" class="w-4 h-4"></i>' +
+                  '</button>' +
+                '</div>' +
+              '</div>' +
+            '</div>';
+          }
+          
+          dividendListHtml = '<div class="space-y-2">' +
+            visibleDividends.map(renderDivCard).join('') +
           '</div>';
+          
+          // 더보기/접기 버튼 추가 (11개 이상일 때만)
+          if (sortedDividends.length > 10) {
+            dividendListHtml += '<button onclick="toggleDividendList()" class="w-full py-3 mt-3 bg-gradient-to-r from-emerald-100 to-green-100 text-green-700 font-semibold rounded-xl hover:from-emerald-200 hover:to-green-200 transition-all duration-200 flex items-center justify-center gap-2">' +
+              (dividendListExpanded ? 
+                '<i data-lucide="chevron-up" class="w-5 h-5"></i><span>접기</span>' : 
+                '<i data-lucide="chevron-down" class="w-5 h-5"></i><span>더보기 (' + hiddenDivCount + '건)</span>') +
+            '</button>';
+          }
         } else {
           dividendListHtml = '<div class="space-y-4">' +
             Object.keys(groupedDividends).sort().reverse().map(function(period) {
