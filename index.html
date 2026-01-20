@@ -972,7 +972,9 @@
             '</div>' +
           '</div>' +
         '</div>' +
-        // 날짜 및 검색 UI 개선
+        // 월 고정비 섹션 (맨 위로 이동)
+        fixedExpenseHtml +
+        // 날짜 및 검색 UI
         '<div class="bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 rounded-2xl p-4 mb-4 shadow-sm border border-indigo-100">' +
           '<div class="flex items-center gap-2 mb-3">' +
             '<div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">' +
@@ -1003,7 +1005,7 @@
             '</div>' +
           '</div>' +
         '</div>' +
-        fixedExpenseHtml +
+        // 기간 선택 버튼
         '<div class="flex gap-2 mb-4 overflow-x-auto pb-2 no-scrollbar">' +
           '<button onclick="setHistoryPeriod(\'daily\')" class="period-btn px-4 py-2 rounded-lg whitespace-nowrap transition bg-blue-500 text-white shadow-md" data-period="daily">일별</button>' +
           '<button onclick="setHistoryPeriod(\'weekly\')" class="period-btn px-4 py-2 rounded-lg whitespace-nowrap transition bg-gray-200" data-period="weekly">주별</button>' +
